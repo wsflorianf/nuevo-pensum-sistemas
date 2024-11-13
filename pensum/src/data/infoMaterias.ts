@@ -1,6 +1,6 @@
-import type { Nivel } from "@/types/informacion"
+import type { NivelType } from '@/types/informacion'
 
-const infoMaterias: Nivel[] = [
+const infoMaterias: NivelType[] = [
   {
     nombre: 'Nivel 1',
     materias: [
@@ -13,6 +13,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 2,
@@ -23,6 +24,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 3,
@@ -33,6 +35,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 4,
@@ -43,6 +46,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 5,
@@ -53,6 +57,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'CB',
       },
     ],
   },
@@ -68,6 +73,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 7,
@@ -78,6 +84,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 8,
@@ -88,6 +95,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 9,
@@ -98,6 +106,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CB',
       },
       {
         codigo: 10,
@@ -108,6 +117,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CB',
       },
     ],
   },
@@ -123,6 +133,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 12,
@@ -133,6 +144,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 13,
@@ -143,6 +155,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 14,
@@ -153,6 +166,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CB',
       },
       {
         codigo: 15,
@@ -163,6 +177,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
     ],
   },
@@ -178,6 +193,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 17,
@@ -188,6 +204,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 18,
@@ -198,6 +215,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 19,
@@ -208,6 +226,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 20,
@@ -218,6 +237,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
     ],
   },
@@ -233,6 +253,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 22,
@@ -243,6 +264,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 23,
@@ -253,6 +275,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 24,
@@ -263,6 +286,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'EX',
       },
       {
         codigo: 25,
@@ -273,6 +297,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
     ],
   },
@@ -288,6 +313,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 27,
@@ -298,6 +324,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 28,
@@ -308,6 +335,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 29,
@@ -318,6 +346,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'EX',
       },
       {
         codigo: 30,
@@ -328,6 +357,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
     ],
   },
@@ -343,6 +373,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 32,
@@ -353,6 +384,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 33,
@@ -363,6 +395,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 34,
@@ -373,6 +406,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
       {
         codigo: 35,
@@ -383,6 +417,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
     ],
   },
@@ -398,6 +433,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 37,
@@ -408,6 +444,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 38,
@@ -418,6 +455,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 39,
@@ -428,6 +466,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
       {
         codigo: 40,
@@ -438,6 +477,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
     ],
   },
@@ -453,6 +493,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 42,
@@ -463,6 +504,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'AI',
       },
       {
         codigo: 43,
@@ -473,6 +515,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
       {
         codigo: 44,
@@ -483,6 +526,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'CO',
       },
       {
         codigo: 45,
@@ -493,6 +537,7 @@ const infoMaterias: Nivel[] = [
         ta: 2,
         urlSyllabus:
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
       },
     ],
   },

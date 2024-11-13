@@ -1,9 +1,9 @@
-export interface Nivel {
+export interface NivelType {
     nombre: string;   // Nivel
-    materias: Materia[]; // Lista de materias en el nivel
+    materias: MateriaType[]; // Lista de materias en el nivel
 }
 
-export interface Materia {
+export interface MateriaType {
     codigo: number;        // Código de la Materia
     nombre: string;        // Nombre Completo
     creditos: number;      // Número de Créditos
@@ -11,4 +11,5 @@ export interface Materia {
     tc: number;            // Horas Trabajo Colaborativo
     ta: number;            // Horas Trabajo Autónomo
     urlSyllabus: string;   // URL del syllabus o plan de la materia
+    tipo: string;          // Tipo de Materia (CO, CB, BI, AI, EX)
 }
