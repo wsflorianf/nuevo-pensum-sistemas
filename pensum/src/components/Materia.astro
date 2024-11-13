@@ -1,19 +1,51 @@
 ---
-import {type Materia} from '@/types/informacion'
+import {type MateriaType} from '@/types/informacion'
 
-interface Props extends Materia{
+interface Props extends MateriaType{
 
 }
 
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus } = Astro.props;
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props;
 ---
 
-<a href="">
-
-</a>
+<div class="materia">
+	<div class="pre"> </div>
+	<div class="corr"> </div>
+	<div class="creditos"></div>
+	<div class="horas">
+		<div class="directo"></div>
+		<div class="colaborativo"></div>
+		<div class="autonomo"></div>
+	</div>
+	<div class={'nombre '+tipo}>
+		{nombre}
+	</div>
+	
+</div>
 
 <style>
 	a{
-		display: block;
+		display: 
+		block;
+	}
+
+	.CO{
+		background-color: #00B0F0;
+	}
+
+	.CB{
+		background-color: #FFFF00;
+	}
+	
+	.BI{
+		background-color: #93D150;
+	}
+	
+	.AI{
+		background-color: #BFBFBF;
+	}
+	
+	.EX{
+		background-color: #FCD5B4;
 	}
 </style>

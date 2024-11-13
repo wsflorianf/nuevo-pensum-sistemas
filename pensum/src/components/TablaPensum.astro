@@ -1,17 +1,67 @@
 ---
-import niveles from '@/data/infoMaterias' 
+//Se importa la información de todas las materias del pensum
+import niveles from '@/data/infoMaterias'
+import Materia from './Materia.astro'
 
+// Arreglo dónde se guardarán la suma de los datos de las materias
+let datosTotales: {
+  tdTotal: number
+  tcTotal: number
+  taTotal: number
+  creditosTotal: number
+}[] = []
+
+// Se itera cada nivel y se guardan en un objeto la suma de los datos todas las materias de ese nivel
+niveles.forEach((nivel) => {
+  let suma = nivel.materias.reduce(
+    (datosTotales, materia) => {
+      datosTotales.tdTotal += materia.td
+      datosTotales.tcTotal += materia.tc
+      datosTotales.taTotal += materia.ta
+      datosTotales.creditosTotal += materia.creditos
+
+      return datosTotales
+    },
+    { tdTotal: 0, tcTotal: 0, taTotal: 0, creditosTotal: 0 }
+  )
+
+  //Se anida al arreglo datosTotales la suma de los datos del nivel
+  datosTotales.push(suma)
+})
 ---
 
-<div id="pensum">
-    {
-        niveles.map(nivel=>{
-            
-            return <p>{nivel.nombre}</p>
-        })
-    }
+<div id='pensum'>
+  {
+    niveles.map((nivel, index) => {
+      return (
+        <div class='nivel'>
+          <h2>{nivel.nombre}</h2>
+
+          {nivel.materias.map((materia) => (
+            <Materia {...materia} />
+          ))}
+
+          <div>
+            <p>{datosTotales[index].tdTotal}</p>
+            <p>{datosTotales[index].tcTotal}</p>
+            <p>{datosTotales[index].taTotal}</p>
+            <p>{datosTotales[index].creditosTotal}</p>
+          </div>
+        </div>
+      )
+    })
+  }
 </div>
 
 <style>
+    #pensum{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nivel{
+        
+    }
 
 </style>
