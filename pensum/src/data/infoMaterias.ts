@@ -362,7 +362,7 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 30,
-        nombre: 'Extrinseca III',
+        nombre: 'Extrínseca III',
         creditos: 4,
         td: 2,
         tc: 2,
@@ -505,7 +505,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 40,
         nombre: 'FORMULACIÓN Y EVALUACIÓN DE PROYECTOS',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -516,7 +516,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 401,
         nombre: 'TRABAJO DE GRADO I',
-        creditos: 4,
+        creditos: 1,
         td: 2,
         tc: 2,
         ta: 2,
@@ -532,7 +532,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 41,
         nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
-        creditos: 3,
+        creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
@@ -543,7 +543,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 42,
         nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
-        creditos: 3,
+        creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
@@ -565,7 +565,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 44,
         nombre: 'ÉTICA',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -576,7 +576,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 45,
         nombre: 'TRABAJO DE GRADO II',
-        creditos: 4,
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
