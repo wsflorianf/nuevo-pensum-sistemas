@@ -34,34 +34,59 @@ niveles.forEach((nivel) => {
   {
     niveles.map((nivel, index) => {
       return (
-        <div class='nivel'>
+        <>
           <h2>{nivel.nombre}</h2>
 
+          <div class="materia">
+
+          
           {nivel.materias.map((materia) => (
             <Materia {...materia} />
           ))}
-
-          <div>
-            <p>{datosTotales[index].tdTotal}</p>
-            <p>{datosTotales[index].tcTotal}</p>
-            <p>{datosTotales[index].taTotal}</p>
-            <p>{datosTotales[index].creditosTotal}</p>
           </div>
-        </div>
+
+          <div class="total">
+            <div>
+              <p>TD: {datosTotales[index].tdTotal}</p>
+              <p>TC: {datosTotales[index].tcTotal}</p>
+              <p>TA: {datosTotales[index].taTotal}</p>
+            </div>
+            <p>Créditos: {datosTotales[index].creditosTotal}</p>
+          </div>
+
+        </>
       )
     })
   }
 </div>
 
-<style>
-    #pensum{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+<style> 
+  @media screen and (min-width: 800px) {
+  
+
+    #pensum {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(3, auto);    
+      gap: 20px;  
     }
 
-    .nivel{
-        
-    }
+    
+  }
+
+  .materia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .total{
+   text-align: center;
+  }
+
+  .total div{
+    display: flex;
+    gap: 10px;
+  }
 
 </style>

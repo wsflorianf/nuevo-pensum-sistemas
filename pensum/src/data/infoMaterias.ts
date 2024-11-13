@@ -539,6 +539,17 @@ const infoMaterias: NivelType[] = [
           'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
         tipo: 'BI',
       },
+      {
+        codigo: 46,
+        nombre: 'Materia 46',
+        creditos: 4,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        tipo: 'BI',
+      },
     ],
   },
 ]
