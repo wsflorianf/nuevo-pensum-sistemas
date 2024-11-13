@@ -1,9 +1,5 @@
-export interface Info {
-    niveles: Nivel[]; // Lista de niveles de la carrera
-}
-
 export interface Nivel {
-    nivel: string;   // Nivel
+    nombre: string;   // Nivel
     materias: Materia[]; // Lista de materias en el nivel
 }
 
