@@ -37,8 +37,7 @@ niveles.forEach((nivel) => {
         <>
           <h2>{nivel.nombre}</h2>
 
-          <div class="materia">
-
+          <div class="materias">
           
           {nivel.materias.map((materia) => (
             <Materia {...materia} />
@@ -74,7 +73,7 @@ niveles.forEach((nivel) => {
     
   }
 
-  .materia{
+  .materias{
     display: flex;
     flex-direction: column;
     gap: 10px;

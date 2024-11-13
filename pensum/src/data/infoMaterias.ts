@@ -7,7 +7,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 1,
         nombre: 'Materia 1',
-        creditos: 3,
+        creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
@@ -72,7 +72,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -83,7 +83,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -94,7 +94,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -105,7 +105,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CB',
       },
       {
@@ -116,7 +116,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CB',
       },
     ],
@@ -132,7 +132,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -143,7 +143,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -154,7 +154,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -165,7 +165,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CB',
       },
       {
@@ -176,7 +176,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
       },
     ],
@@ -192,7 +192,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -203,7 +203,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -214,7 +214,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -225,7 +225,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -236,7 +236,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
       },
     ],
@@ -252,7 +252,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -263,7 +263,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -274,7 +274,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
@@ -285,8 +285,8 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'EX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 25,
@@ -296,9 +296,21 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'CO',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
+      {
+        codigo: 251,
+        nombre: 'Materia 251',
+        creditos: 4,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      
     ],
   },
   {
@@ -306,57 +318,68 @@ const infoMaterias: NivelType[] = [
     materias: [
       {
         codigo: 26,
-        nombre: 'Materia 26',
+        nombre: 'PROCESOS ESTOCÁSTICOS',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'AI',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
       {
         codigo: 27,
-        nombre: 'Materia 27',
+        nombre: 'CURSO OBLIGATORIO I RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 28,
-        nombre: 'Materia 28',
+        nombre: 'CURSO OBLIGATORIO II RF',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 29,
-        nombre: 'Materia 29',
+        nombre: 'CURSO ELECTIVO I RF',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'EX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'AI',
       },
       {
         codigo: 30,
-        nombre: 'Materia 30',
+        nombre: 'Extrinseca III',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'EX',
+      },
+      {
+        codigo: 301,
+        nombre: 'INGENIERIA ECONÓMICA',
+        creditos: 4,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
       },
     ],
@@ -366,58 +389,69 @@ const infoMaterias: NivelType[] = [
     materias: [
       {
         codigo: 31,
-        nombre: 'Materia 31',
+        nombre: 'CURSO OBLIGATORIO III RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 32,
-        nombre: 'Materia 32',
+        nombre: 'CURSO OBLIGATORIO IV RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 33,
-        nombre: 'Materia 33',
+        nombre: 'CURSO ELECTIVO II RF',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 34,
-        nombre: 'Materia 34',
+        nombre: 'SISTEMAS OPERATIVOS',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
       {
         codigo: 35,
-        nombre: 'Materia 35',
+        nombre: 'TEORIA DE LA INFORMACIÓN',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
+      },
+      {
+        codigo: 351,
+        nombre: 'METODOLOGÍA DE LA INVESTIGACIÓN',
+        creditos: 4,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'CO',
       },
     ],
   },
@@ -426,58 +460,69 @@ const infoMaterias: NivelType[] = [
     materias: [
       {
         codigo: 36,
-        nombre: 'Materia 36',
+        nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 37,
-        nombre: 'Materia 37',
+        nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 38,
-        nombre: 'Materia 38',
+        nombre: 'CURSO ELECTIVO III RF',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 39,
-        nombre: 'Materia 39',
+        nombre: 'GRUPO DE INVESTIGACIÓN',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
       },
       {
         codigo: 40,
-        nombre: 'Materia 40',
+        nombre: 'FORMULACIÓN Y EVALUACIÓN DE PROYECTOS',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
+      },
+      {
+        codigo: 401,
+        nombre: 'TRABAJO DE GRADO I',
+        creditos: 4,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
       },
     ],
   },
@@ -486,68 +531,57 @@ const infoMaterias: NivelType[] = [
     materias: [
       {
         codigo: 41,
-        nombre: 'Materia 41',
+        nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 42,
-        nombre: 'Materia 42',
+        nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
         codigo: 43,
-        nombre: 'Materia 43',
+        nombre: 'CURSO ELECTIVO IV RF',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'CO',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'AI',
       },
       {
         codigo: 44,
-        nombre: 'Materia 44',
+        nombre: 'ÉTICA',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CO',
       },
       {
         codigo: 45,
-        nombre: 'Materia 45',
+        nombre: 'TRABAJO DE GRADO II',
         creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        tipo: 'BI',
-      },
-      {
-        codigo: 46,
-        nombre: 'Materia 46',
-        creditos: 4,
-        td: 2,
-        tc: 2,
-        ta: 2,
-        urlSyllabus:
-          'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'BI',
       },
     ],
