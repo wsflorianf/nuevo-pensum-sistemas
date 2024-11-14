@@ -1,3 +1,6 @@
+body{
+  background-color: #f0e4d7;
+}
 .plan-de-estudios {
   display: flex;
   gap: 20px;
@@ -6,12 +9,14 @@
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 45px;
   color: #333;
   text-align: center;
 }
 
 h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   color: #555;
   text-align: center;
@@ -27,6 +32,7 @@ h2 {
 }
 
 .nivel-columna h3 {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   color: #333;
   background-color: #f0f0f0;
@@ -36,6 +42,7 @@ h2 {
 }
 
 .materia {
+  font-family: 'Inter', sans-serif;
   border: 1px solid #333;
   padding: 10px;
   text-align: center;
@@ -45,7 +52,7 @@ h2 {
   border-radius: 3px;
   transition: background-color 0.3s;
   width: 95%;
-  height:140px;
+  height:150px;
 }
 
 .materia input[type="checkbox"] {
