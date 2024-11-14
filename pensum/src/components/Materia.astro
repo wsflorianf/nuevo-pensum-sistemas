@@ -9,8 +9,12 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <div class='materia' data-url={urlSyllabus} data-name={nombre} data-type={tipo} data-code={codigo}>
   <div class='cod'><span>Código: </span>{codigo}</div>
-  <div class='pre'><span>Pre:</span></div>
-  <div class='corr'><span>Corr:</span></div>
+
+  <!-- Se quita temporalmente los siguientes campos hasta definir una estructura concreta -->
+
+  <!-- <div class='pre'><span>Pre:</span></div>
+  <div class='corr'><span>Corr:</span></div> -->
+
   <div class='creditos'><span>Créditos: </span>{creditos}</div>
   <div class='horas'>
     <div class='directo'><span>TD: </span>{td}</div>
@@ -55,7 +59,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
         let url = materia.getAttribute('data-url') || ''
 
         if(isMobile()){
-          window.location.replace(url)
+          window.location.href = url
           alert("hola")
         }
         else{
@@ -95,6 +99,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
   .materia {
     border: 1px black solid;
+    width: auto;
   }
 
   .materia div {
@@ -154,7 +159,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     background-color: #fcd5b4;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 840px) {
     .materia {
       width: 100%;
       transition: 0.2s all;
@@ -166,4 +171,22 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
       box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
     }
   }
+
+  @media screen and (max-width: 1200px) {
+
+    .materia{
+      height: 120px;
+    }
+
+    .materia div {
+      padding: 0 2px;
+    }
+
+    .nombre{
+      padding: 1px;
+      font-size: 0.9em;
+    }
+  }
+
+
 </style>

@@ -608,7 +608,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
         tipo: 'BI',
       },
     ],
@@ -669,7 +669,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
         tipo: 'BI',
       },
     ],
