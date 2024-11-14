@@ -31,9 +31,15 @@ const PlanDeEstudios = () => {
   }, []);
 
   const toggleAprobado = (codigo) => {
-    setMaterias(materias.map((m) =>
-      m.codigo === codigo ? { ...m, estado: !m.estado } : m
-    ));
+    setMaterias((prevMaterias) => {
+      const nuevasMaterias = prevMaterias.map((m) =>
+        m.codigo === codigo ? { ...m, estado: !m.estado } : m
+      );
+  
+      // Agregar console.log para ver el cambio de estado
+      console.log("Estado de materias actualizado:", nuevasMaterias);
+      return nuevasMaterias;
+    });
   };
 
   // Agrupar materias por nivel
