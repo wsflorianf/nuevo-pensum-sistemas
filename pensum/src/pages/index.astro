@@ -1,22 +1,28 @@
 ---
-import TablaPensum from '@/components/TablaPensum.astro';
-import Layout from '../layouts/Layout.astro';
+import TablaPensum from '@/components/TablaPensum.astro'
+import Layout from '../layouts/Layout.astro'
+import BarraMaterias from '@/components/BarraMaterias.astro';
 ---
 
 <Layout title="Pensum - Ingeniería de Sistemas">
-	<h1>Pensum - Ingeniería de Sistemas</h1>
+	<h1>Universidad Distrital Francisco José de Caldas
+    <br>
+    <span>Plan de Estudios - Ingeniería de Sistemas</span></h1>
 	<main>
 		<TablaPensum/>
+		
 	</main>
-	
-	<!-- Acá va el componente de leyenda -->
+
+	<BarraMaterias/>
 	
 </Layout>
 
 <style>
-
-	h1{
-		text-align: center;
-	}
-
+  h1 {
+    text-align: center;
+  }
+	
+  h1 span{
+    font-weight: 500;
+  }
 </style>

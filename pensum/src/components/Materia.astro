@@ -1,51 +1,122 @@
 ---
-import {type MateriaType} from '@/types/informacion'
+import { type MateriaType } from '@/types/informacion'
 
-interface Props extends MateriaType{
+interface Props extends MateriaType {}
 
-}
-
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props;
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<div class="materia">
-	<div class="pre"> </div>
-	<div class="corr"> </div>
-	<div class="creditos"></div>
-	<div class="horas">
-		<div class="directo"></div>
-		<div class="colaborativo"></div>
-		<div class="autonomo"></div>
-	</div>
-	<div class={'nombre '+tipo}>
-		{nombre}
-	</div>
-	
+<div class='materia' data-url={urlSyllabus} data-type={tipo}>
+  <div class='cod'><span>Código: </span>{codigo}</div>
+  <div class='pre'><span>Pre:</span></div>
+  <div class='corr'><span>Corr:</span></div>
+  <div class='creditos'><span>Créditos: </span>{creditos}</div>
+  <div class='horas'>
+    <div class='directo'><span>TD: </span>{td}</div>
+    <div class='colaborativo'><span>TC: </span>{tc}</div>
+    <div class='autonomo'><span>TA: </span>{ta}</div>
+  </div>
+  <div class={'nombre ' + tipo}>
+    {nombre}
+  </div>
 </div>
 
+<script>
+  
+    document.querySelectorAll('.materia').forEach((materia) => {
+      let tipo = materia.getAttribute('data-type')
+      if (tipo == 'EX') {
+      } else if (tipo == 'AI') {
+        materia.addEventListener('click', () => {
+          alert(materia.getAttribute('data-type'))
+        })
+      } else {
+        materia.addEventListener('click', () => {
+          alert(materia.getAttribute('data-url'))
+        })
+      }
+    })
+  
+</script>
+
 <style>
-	a{
-		display: 
-		block;
-	}
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
 
-	.CO{
-		background-color: #00B0F0;
-	}
+  .materia {
+    border: 1px black solid;
+  }
 
-	.CB{
-		background-color: #FFFF00;
-	}
-	
-	.BI{
-		background-color: #93D150;
-	}
-	
-	.AI{
-		background-color: #BFBFBF;
-	}
-	
-	.EX{
-		background-color: #FCD5B4;
-	}
+  .materia div {
+    padding: 0 4px;
+    width: 100%;
+    border: 1px black solid;
+  }
+
+  span {
+    font-weight: 500;
+  }
+
+  .materia {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    height: 140px;
+  }
+
+  .nombre {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px;
+    justify-self: center;
+  }
+
+  .horas {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .horas div {
+    border: none;
+  }
+
+  .CO {
+    background-color: #00b0f0;
+  }
+
+  .CB {
+    background-color: #ffff00;
+  }
+
+  .BI {
+    background-color: #93d150;
+  }
+
+  .AI {
+    background-color: #bfbfbf;
+  }
+
+  .EX {
+    background-color: #fcd5b4;
+  }
+
+  @media screen and (min-width: 800px) {
+    .materia {
+      width: 100%;
+      transition: 0.2s all;
+    }
+
+    .materia:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
+    }
+  }
 </style>
