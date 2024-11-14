@@ -4,28 +4,32 @@ import { motion } from "framer-motion";
 const FAQData = [
   {
     question: "¿Cómo se observa en la estructura curricular?",
-    answer:
-      "La estructura curricular se encuentra distribuida en 9 semestres; sin embargo, bajo el marco legal vigente, el estudiante podría llegar a terminarla en 8 semestres. La cantidad de créditos se disminuye en los 9 semestres.Se mantienen factores diferenciadores como Grupo de trabajo y Grupo de investigación.El eje principal de la reforma es el estudiante, donde se amplía el abanico de alternativas de profundización, actualizadas, y se le da una mayor flexibilidad para que seleccione la ruta de formación acorde a sus intereses y propósitos como futuro profesional.Se mantienen las improntas institucionales.",
+    answer: [
+      "La estructura curricular está distribuida en 9 semestres; sin embargo, de acuerdo con el marco legal vigente, el estudiante podría completarla en 8 semestres.",
+      "La cantidad de créditos disminuye en estos 9 semestres, conservando factores diferenciadores como el Grupo de trabajo y el Grupo de investigación.",
+      "El eje principal de la reforma es el estudiante, ampliándose el abanico de alternativas de profundización, con opciones actualizadas y una mayor flexibilidad para que elija una ruta de formación acorde a sus intereses y propósitos profesionales.",
+      "Las improntas institucionales se mantienen, respetando los valores y la identidad de la institución."
+  ]
   },
   {
     question: "¿Qué pasa cuando el estudiante termina el 5to semestre?",
     answer:
-      "El estudiante de Ingeniería de Sistemas seleccionará uno de los ejes de formación sobre el cual desea realizar la profundización profesional.",
+      ["El estudiante de Ingeniería de Sistemas seleccionará uno de los ejes de formación sobre el cual desea realizar la profundización profesional."],
   },
   {
     question: "¿Qué es Curso Obligatorio RF?",
     answer:
-      "Cursos obligatorios, de único espacio académico, necesario para fundamentar la RF seleccionada.",
+      ["Cursos obligatorios, de único espacio académico, necesario para fundamentar la RF seleccionada."],
   },
   {
     question: "¿Qué es Curso Electivo RF?",
     answer:
-      "Curso electivo, con varios espacios académicos, donde el estudiante selecciona una de las propuestas temáticas, sobre  la cual requiere fortalecer su formación en la RF seleccionada.",
+      ["Curso electivo, con varios espacios académicos, donde el estudiante selecciona una de las propuestas temáticas, sobre  la cual requiere fortalecer su formación en la RF seleccionada."],
   },
   {
     question: "¿Qué es Curso Curso Electivo Flexible RF?",
     answer:
-      "Curso electivo perteneciente a otra RF, con varios espacios académicos, donde el estudiante selecciona una de las propuestas temáticas, sobre  la cual quisiera complementar su formación en la RF seleccionada o su proceso de investigación.",
+      ["Curso electivo perteneciente a otra RF, con varios espacios académicos, donde el estudiante selecciona una de las propuestas temáticas, sobre  la cual quisiera complementar su formación en la RF seleccionada o su proceso de investigación."],
   },
 ];
 
@@ -77,7 +81,11 @@ const FAQBox = ({ defaultOpen, title, content }) => {
             isOpen ? "max-h-96" : "max-h-0"
           }`}
         >
-          {content}
+          {content.map((paragraph, idx) => (
+            <p key={idx} className="mb-4 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
         </p>
       </div>
       <div className="absolute top-6 right-4 sm:top-8 sm:right-8">

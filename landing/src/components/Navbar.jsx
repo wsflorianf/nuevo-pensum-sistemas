@@ -9,7 +9,6 @@ const navbarLinks = [
   { label: "Motivos", href: "/#motivos", ariaLabel: "Motivos" },
   { label: "Ejes", href: "/#ejes", ariaLabel: "Ejes" },
   { label: "Flexibilidad", href: "/#flex", ariaLabel: "Flexibilidad" },
-  { label: "Créditos", href: "/#creditos", ariaLabel: "Créditos" },
   { label: "Beneficios", href: "/#beneficios", ariaLabel: "Beneficios" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
   { label: "Preguntas", href: "/#preguntas", ariaLabel: "Preguntas" },

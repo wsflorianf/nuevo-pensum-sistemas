@@ -7,7 +7,6 @@ import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [materias, setMaterias] = useState([]);
-  
 
   // Datos de las materias para cada enfoque
   const materiasPorEnfoque = {
@@ -21,7 +20,7 @@ export const FeaturesDiagonal = () => {
       "Gestión y Configuración de Software",
       "Computación Distribuida y Paralela",
       "Desarrollo de Software Basado en Componentes",
-      "Desarrollo de SW para Videojuegos"
+      "Desarrollo de SW para Videojuegos",
     ],
     "Ingeniería de datos": [
       "Estadística Multidimensional",
@@ -35,7 +34,7 @@ export const FeaturesDiagonal = () => {
       "Arquitectura de Bases de Datos",
       "Análisis Predictivo",
       "Visualización de Datos",
-      "Gestión de la Calidad de los Datos"
+      "Gestión de la Calidad de los Datos",
     ],
     "Redes de Datos": [
       "Redes I",
@@ -49,7 +48,7 @@ export const FeaturesDiagonal = () => {
       "Técnicas de Cifrado",
       "SDN (Software Defined Network)",
       "Tecnologías de Virtualización de Redes",
-      "Optimización de Redes y Gestión del Tráfico"
+      "Optimización de Redes y Gestión del Tráfico",
     ],
     "Planeación y Gestión de Proyectos de TI": [
       "Planeación Estratégica",
@@ -65,7 +64,7 @@ export const FeaturesDiagonal = () => {
       "Herramientas de Gestión de TI",
       "Metodologías de Gestión de Proyectos",
       "Gestión de la Innovación en TI",
-      "Gestión de la Calidad en Proyectos TI"
+      "Gestión de la Calidad en Proyectos TI",
     ],
     "Cibernética e Inteligencia Artificial (Ciencia de Sistemas)": [
       "Inteligencia Artificial I",
@@ -83,22 +82,25 @@ export const FeaturesDiagonal = () => {
       "Redes Neuronales y Deep Learning",
       "Procesamiento de Lenguaje Natural",
       "Visión por Computadora",
-      "Agentes Inteligentes y Sistemas Multiagentes"
-    ]
+      "Agentes Inteligentes y Sistemas Multiagentes",
+    ],
   };
 
   const handleButtonClick = (enfoque) => {
     console.log(isModalOpen, "JASKDJALKSD NMMS", enfoque);
-    setIsModalOpen(prev => {
-      console.log(prev)
+    setIsModalOpen((prev) => {
+      console.log(prev);
       return prev;
-    })
+    });
     setIsModalOpen(true);
     setMaterias(materiasPorEnfoque[enfoque]);
   };
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1" id="ejes">
+    <section
+      className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1"
+      id="ejes"
+    >
       <div className="shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -125,50 +127,64 @@ export const FeaturesDiagonal = () => {
               Nuevos Ejes de Formación
             </h2>
             <p className="mb-7 text-secondaryText leading-loose">
-              Los nuevos ejes de formación permiten que el ingeniero de sistemas graduado
-              adquiera una sólida comprensión en áreas clave como el desarrollo de software, 
-              la gestión de datos, las redes de comunicación, la administración de proyectos 
-              tecnológicos y la inteligencia artificial.
+              Los nuevos ejes de formación permiten que el ingeniero de sistemas
+              graduado adquiera una sólida comprensión en áreas clave como el
+              desarrollo de software, la gestión de datos, las redes de
+              comunicación, la administración de proyectos tecnológicos y la
+              inteligencia artificial.
             </p>
-            <div className="w-max grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="w-max mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
               <button
-                className="w-fit lg:w-full h-fit contained-button mx-auto p-2"
-                onClick={() => handleButtonClick("Análisis, diseño y construcción de software")}
-                aria-label="Get started"
+                className="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
+                onClick={() =>
+                  handleButtonClick(
+                    "Análisis, diseño y construcción de software"
+                  )
+                }
               >
                 Análisis, diseño y construcción de software
               </button>
               <button
-                className="w-fit lg:w-[250px] h-fit contained-button mx-auto p-2"
+                className="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
                 onClick={() => handleButtonClick("Ingeniería de datos")}
-                aria-label="Get started"
               >
                 Ingeniería de datos
               </button>
               <button
-                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
+                className="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
                 onClick={() => handleButtonClick("Redes de Datos")}
-                aria-label="Get started"
+                a
               >
                 Redes de Datos
               </button>
               <button
-                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
-                onClick={() => handleButtonClick("Planeación y Gestión de Proyectos de TI")}
-                aria-label="Get started"
+                className="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
+                onClick={() =>
+                  handleButtonClick("Planeación y Gestión de Proyectos de TI")
+                }
               >
                 Planeación y Gestión de Proyectos de TI
               </button>
               <button
-                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
-                onClick={() => handleButtonClick("Cibernética e Inteligencia Artificial (Ciencia de Sistemas)")}
-                aria-label="Get started"
+                className="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
+                onClick={() =>
+                  handleButtonClick(
+                    "Cibernética e Inteligencia Artificial (Ciencia de Sistemas)"
+                  )
+                }
               >
                 Cibernética e Inteligencia Artificial (Ciencia de Sistemas)
               </button>
             </div>
-            
-            {isModalOpen && <InvitationModal setIsOpen={setIsModalOpen} materias={materias} />}
+
+            {isModalOpen && (
+              <InvitationModal setIsOpen={setIsModalOpen} materias={materias} />
+            )}
           </div>
         </div>
       </motion.div>
