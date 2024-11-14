@@ -148,7 +148,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          'https://herramientas.datos.gov.co/sites/default/files/2021-08/Pruebas_3.pdf',
         tipo: 'CO',
       },
       {
@@ -449,7 +449,7 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: "39",
-        nombre: 'Extrínseca III',
+        nombre: 'EXTRÍNSECA III',
         creditos: 2,
         td: 2,
         tc: 2,
@@ -460,7 +460,7 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: "40",
-        nombre: 'INGENIERIA ECONÓMICA',
+        nombre: 'INGENIERÍA ECONÓMICA',
         creditos: 2,
         td: 2,
         tc: 2,
@@ -520,7 +520,7 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: "45",
-        nombre: 'TEORIA DE LA INFORMACIÓN',
+        nombre: 'TEORÍA DE LA INFORMACIÓN',
         creditos: 2,
         td: 2,
         tc: 2,
@@ -627,6 +627,7 @@ const infoMaterias: NivelType[] = [
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
+      // {nombre: "", tipo: "", urlSyllabus: ""},
       {
         codigo: "52",
         nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
@@ -651,7 +652,7 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: "54",
-        nombre: 'ÉTICA',
+        nombre: 'ÉTICA Y BIOÉTICA',
         creditos: 2,
         td: 2,
         tc: 2,

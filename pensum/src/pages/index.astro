@@ -2,6 +2,7 @@
 import TablaPensum from '@/components/TablaPensum.astro'
 import Layout from '../layouts/Layout.astro'
 import BarraMaterias from '@/components/BarraMaterias.astro';
+import ModalPDF from '@/components/ModalPDF.astro';
 ---
 
 <Layout title="Pensum - Ingeniería de Sistemas">
@@ -13,8 +14,12 @@ import BarraMaterias from '@/components/BarraMaterias.astro';
 		
 	</main>
 
-	<BarraMaterias/>
+  <br>
+
+  <BarraMaterias/>
 	
+  <ModalPDF/>
+
 </Layout>
 
 <style>

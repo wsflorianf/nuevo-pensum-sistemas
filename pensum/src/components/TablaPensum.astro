@@ -11,17 +11,20 @@ let datosTotales: {
   creditosTotal: number
 }[] = []
 
-// Se itera cada nivel y se guardan en un objeto la suma de los datos todas las materias de ese nivel
+// Se itera cada nivel y se guardan en un objeto "totalMaterias" la suma de los datos todas las materias de ese nivel
 niveles.forEach((nivel) => {
   let suma = nivel.materias.reduce(
-    (datosTotales, materia) => {
-      datosTotales.tdTotal += materia.td
-      datosTotales.tcTotal += materia.tc
-      datosTotales.taTotal += materia.ta
-      datosTotales.creditosTotal += materia.creditos
+    (totalMaterias, materia) => {
+      if(materia.ta && materia.tc && materia.td && materia.creditos){
+        totalMaterias.tdTotal += materia.td
+        totalMaterias.tcTotal += materia.tc
+        totalMaterias.taTotal += materia.ta
+        totalMaterias.creditosTotal += materia.creditos
+      }
 
-      return datosTotales
+      return totalMaterias
     },
+    
     { tdTotal: 0, tcTotal: 0, taTotal: 0, creditosTotal: 0 }
   )
 
@@ -43,14 +46,11 @@ niveles.forEach((nivel) => {
             ))}
           </div>
 
-          
-
           <table class='total'>
-            
             <tr>
-              <td>TD</td>
-              <td>TC</td>
-              <td>TA</td>
+              <td title="Trabajo Presencial Directo">TD</td>
+              <td title="Trabajo Mediado_Cooperativo">TC</td>
+              <td title="Trabajo Autónomo">TA</td>
             </tr>
             <tr>
               <td>{datosTotales[index].tdTotal}</td>
@@ -63,6 +63,7 @@ niveles.forEach((nivel) => {
             
           </table>
           
+          
         </>
       )
     })
@@ -71,8 +72,16 @@ niveles.forEach((nivel) => {
 
 <style>
   h2 {
-    text-align: center;
-    margin: 1rem 0;    
+    text-align: center;  
+    margin: 0;
+  }
+
+  #pensum{
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(9, 1fr);
+      gap: 14px;
   }
 
   .materias {
@@ -86,17 +95,22 @@ niveles.forEach((nivel) => {
     text-align: center;
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 0;
   }
 
   .total td {
     border: 1px black solid;
+    text-decoration: none;
   }
 
-  @media screen and (min-width: 800px) {
+  .total tr:first-child td{
+    cursor: help;
+  }
+
+  @media screen and (max-width: 800px) {
 
     h2{
-      margin: 0;
+      margin: 1rem 0;  
     }
 
     .materias{
@@ -104,15 +118,11 @@ niveles.forEach((nivel) => {
     }
 
     .total{
-      margin: 0;
+      margin-bottom: 2rem;
     }
 
     #pensum {
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-rows: repeat(3, auto);
-      grid-template-columns: repeat(9, 1fr);
-      gap: 14px;
+      display: block;
     }
   }
 </style>

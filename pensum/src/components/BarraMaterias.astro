@@ -1,25 +1,26 @@
 ---
 ---
 
-<div class="barra-materias">
-  <div class="materia CO">Complementario</div>
-  <div class="materia CB">Ciencias Básicas</div>
-  <div class="materia BI">Básicas de Ingeniería</div>
-  <div class="materia AI">Aplicadas de Ingeniería</div>
-  <div class="materia EX">Extrínsecas</div>
+<div class="barra-categorias">
+  <div class="categoria CO">Complementario</div>
+  <div class="categoria CB">Ciencias Básicas</div>
+  <div class="categoria BI">Básicas de Ingeniería</div>
+  <div class="categoria AI">Aplicadas de Ingeniería</div>
+  <div class="categoria EX">Extrínsecas</div>
 </div>
 
 <style>
-	.barra-materias {
+	.barra-categorias {
 		display: flex;
 		gap: 10px;
 		padding: 10px;
 		background-color: #ffffff;
 		border-radius: 8px;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 
-	.materia {
+	.categoria {
 		padding: 5px 10px;
 		color: black;
 		font-weight: bold;
@@ -28,7 +29,14 @@
 		text-align: center;
 	}
 
-  /* Colores de cada tipo de materia */
+	@media screen and (max-width: 800px) {
+
+
+		.categoria{
+			width: 100%;
+		}
+	}
+
 
     .CO { 
 		background-color: #00b0f0; 

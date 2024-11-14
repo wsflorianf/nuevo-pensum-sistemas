@@ -3,10 +3,11 @@ import { type MateriaType } from '@/types/informacion'
 
 interface Props extends MateriaType {}
 
+//Props del componente
 const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<div class='materia' data-url={urlSyllabus} data-type={tipo}>
+<div class='materia' data-url={urlSyllabus} data-name={nombre} data-type={tipo} data-code={codigo}>
   <div class='cod'><span>Código: </span>{codigo}</div>
   <div class='pre'><span>Pre:</span></div>
   <div class='corr'><span>Corr:</span></div>
@@ -23,20 +24,66 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <script>
   
-    document.querySelectorAll('.materia').forEach((materia) => {
-      let tipo = materia.getAttribute('data-type')
-      if (tipo == 'EX') {
-      } else if (tipo == 'AI') {
-        materia.addEventListener('click', () => {
-          alert(materia.getAttribute('data-type'))
-        })
-      } else {
-        materia.addEventListener('click', () => {
-          alert(materia.getAttribute('data-url'))
-        })
-      }
-    })
+  function isMobile() {
+  return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+}
+
   
+
+  //Se seleccionan todas las materias para asignarles el evento necesario según corresponda el tipo (EX, AI o el resto)
+  document.querySelectorAll('.materia').forEach((materia) => {
+    //Se obtiene el tipo del atributo data-type
+    let tipo = materia.getAttribute('data-type')
+
+    //Si es EX no se le asigna eventListener
+    if (tipo == 'EX') {
+    }
+    //Para AI se redirige hacia las opciones posibles para este espacio
+    else if (tipo == 'AI') {
+      materia.addEventListener('click', () => {
+        
+        let url = materia.getAttribute('data-url') || ''
+
+        window.location.replace(url)
+
+      })
+    }
+    //Para las demás se muestra una ventana modal con su syllabus
+    else {
+      materia.addEventListener('click', () => {
+
+        let url = materia.getAttribute('data-url') || ''
+
+        if(isMobile()){
+          window.location.replace(url)
+          alert("hola")
+        }
+        else{
+        //Se lleva hacia la parte superior del sitio
+        scrollTo({ top: 0 })
+
+        //Se quita temporalmente el scroll al sitio
+        document.body.style.overflow = 'hidden'
+
+        const pdfView = document.querySelector('#modal-pdf')
+        const iframe = document.createElement('iframe')
+
+        let titulo = pdfView?.querySelector('h2')
+
+        if(titulo){
+          titulo.innerText = materia.getAttribute("data-name") || ""
+        }           
+
+        //Se establece el modal como abierto
+        pdfView?.setAttribute('data-mode', 'open')
+
+        //Se agrega el iframe para visualizar el PDF con su respectiva url, la url se obtiene del atributo data-url de la materia
+        iframe.src = url
+        pdfView?.appendChild(iframe)
+      }
+      })
+    }
+  })
 </script>
 
 <style>
