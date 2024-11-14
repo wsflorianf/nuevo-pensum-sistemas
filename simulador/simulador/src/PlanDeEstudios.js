@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './PlanDeEstudios.css';  // Importa los estilos
+import './PlanDeEstudios.css';
 
 const Materia = ({ materia, toggleAprobado }) => (
   <div className={`materia ${materia.estado ? 'aprobada' : ''}`}>
@@ -9,7 +9,6 @@ const Materia = ({ materia, toggleAprobado }) => (
       onChange={() => toggleAprobado(materia.codigo)}
     />
     <p><strong>{materia.nombre}</strong></p>
-    <p>Nivel: {materia.nivel}</p>
     <p>Código: {materia.codigo}</p>
     <p>Créditos: {materia.creditos}</p>
   </div>
@@ -19,14 +18,12 @@ const PlanDeEstudios = () => {
   const [materias, setMaterias] = useState([]);
 
   useEffect(() => {
-    // Carga el archivo JSON desde la carpeta public
     fetch('/data.json')
       .then((response) => response.json())
       .then((data) => {
-        // Agrega el campo "estado" a cada elemento si no existe
         const inicializarEstado = data.map(materia => ({
           ...materia,
-          estado: false // Añade "estado" con valor inicial "false"
+          estado: false
         }));
         setMaterias(inicializarEstado);
       })
@@ -39,10 +36,22 @@ const PlanDeEstudios = () => {
     ));
   };
 
+  // Agrupar materias por nivel
+  const niveles = materias.reduce((acc, materia) => {
+    acc[materia.nivel] = acc[materia.nivel] || [];
+    acc[materia.nivel].push(materia);
+    return acc;
+  }, {});
+
   return (
     <div className="plan-de-estudios">
-      {materias.map((materia) => (
-        <Materia key={materia.codigo} materia={materia} toggleAprobado={toggleAprobado} />
+      {Object.keys(niveles).map((nivel) => (
+        <div key={nivel} className="nivel-columna">
+          <h3>Nivel {nivel}</h3>
+          {niveles[nivel].map((materia) => (
+            <Materia key={materia.codigo} materia={materia} toggleAprobado={toggleAprobado} />
+          ))}
+        </div>
       ))}
     </div>
   );
