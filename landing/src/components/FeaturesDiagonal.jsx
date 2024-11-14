@@ -6,9 +6,99 @@ import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [materias, setMaterias] = useState([]);
+  
+
+  // Datos de las materias para cada enfoque
+  const materiasPorEnfoque = {
+    "Análisis, diseño y construcción de software": [
+      "Diseño de Software",
+      "Construcción de Software",
+      "Ingeniería de Requerimientos",
+      "Calidad de Software",
+      "Ingeniería Web",
+      "Verificación de Software",
+      "Gestión y Configuración de Software",
+      "Computación Distribuida y Paralela",
+      "Desarrollo de Software Basado en Componentes",
+      "Desarrollo de SW para Videojuegos"
+    ],
+    "Ingeniería de datos": [
+      "Estadística Multidimensional",
+      "Bases de Datos Avanzadas",
+      "Minería de Datos",
+      "Programación para Análisis de Datos",
+      "Big Data",
+      "Gestión de Datos Abiertos",
+      "Data Warehouse",
+      "Heurística para el Análisis de Datos",
+      "Arquitectura de Bases de Datos",
+      "Análisis Predictivo",
+      "Visualización de Datos",
+      "Gestión de la Calidad de los Datos"
+    ],
+    "Redes de Datos": [
+      "Redes I",
+      "Redes II",
+      "Redes III",
+      "Redes IV",
+      "Arquitectura de Servicios en la Nube",
+      "Mecanismos de Seguridad Informática",
+      "Redes de Datos Inteligentes",
+      "Gestión de Seguridad Informática",
+      "Técnicas de Cifrado",
+      "SDN (Software Defined Network)",
+      "Tecnologías de Virtualización de Redes",
+      "Optimización de Redes y Gestión del Tráfico"
+    ],
+    "Planeación y Gestión de Proyectos de TI": [
+      "Planeación Estratégica",
+      "Fundamentos de Arquitectura Empresarial",
+      "Gestión de Proyectos Informáticos",
+      "Gobierno y Gestión de TI",
+      "Gestión de Servicios de TI",
+      "Uso y Apropiación de TI",
+      "Cibernética Organizacional",
+      "Interventoría Informática",
+      "Ingeniería Económica para Software",
+      "Auditoría Informática",
+      "Herramientas de Gestión de TI",
+      "Metodologías de Gestión de Proyectos",
+      "Gestión de la Innovación en TI",
+      "Gestión de la Calidad en Proyectos TI"
+    ],
+    "Cibernética e Inteligencia Artificial (Ciencia de Sistemas)": [
+      "Inteligencia Artificial I",
+      "Inteligencia Artificial II",
+      "Cibernética I",
+      "Cibernética II",
+      "Inteligencia Artificial Avanzada I",
+      "Inteligencia Artificial Avanzada II",
+      "Inteligencia Artificial Avanzada III",
+      "Cibernética Cualitativa I",
+      "Cibernética Cualitativa II",
+      "Cibernética Cualitativa III",
+      "Robótica y Automatización",
+      "Sistemas Autónomos",
+      "Redes Neuronales y Deep Learning",
+      "Procesamiento de Lenguaje Natural",
+      "Visión por Computadora",
+      "Agentes Inteligentes y Sistemas Multiagentes"
+    ]
+  };
+
+  const handleButtonClick = (enfoque) => {
+    console.log(isModalOpen, "JASKDJALKSD NMMS", enfoque);
+    setIsModalOpen(prev => {
+      console.log(prev)
+      return prev;
+    })
+    setIsModalOpen(true);
+    setMaterias(materiasPorEnfoque[enfoque]);
+  };
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1">
+    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1" id="ejes">
       <div className="shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -29,31 +119,56 @@ export const FeaturesDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-          <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-            <span className="block-subtitle">Accelerate Your Success</span>
+        <div className="2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-start bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+          <div className="w-full lg:w-1/2 flex flex-col lg:mx-unset">
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
-              Build &amp; Launch without problems
+              Nuevos Ejes de Formación
             </h2>
-            <p className="mb-16 text-secondaryText leading-loose">
-              Our platform enables you to launch your data-driven projects with
-              ease. Boost productivity and achieve better results. Empower your
-              decision-making with advanced analytics
+            <p className="mb-7 text-secondaryText leading-loose">
+              Los nuevos ejes de formación permiten que el ingeniero de sistemas graduado
+              adquiera una sólida comprensión en áreas clave como el desarrollo de software, 
+              la gestión de datos, las redes de comunicación, la administración de proyectos 
+              tecnológicos y la inteligencia artificial.
             </p>
-            <button
-              className="w-[210px] h-12 contained-button mr-10 "
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Get started"
-            >
-              Get Started
-            </button>
-          </div>
-          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-            <img
-              src={featuresdiagonal.src}
-              alt="Feature image"
-              className="rounded-xl  main-border-gray"
-            />
+            <div className="w-max grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+              <button
+                className="w-fit lg:w-[250px] h-fit contained-button mx-auto p-2"
+                onClick={() => handleButtonClick("Análisis, diseño y construcción de software")}
+                aria-label="Get started"
+              >
+                Análisis, diseño y construcción de software
+              </button>
+              <button
+                className="w-fit lg:w-[250px] h-fit contained-button mx-auto p-2"
+                onClick={() => handleButtonClick("Ingeniería de datos")}
+                aria-label="Get started"
+              >
+                Ingeniería de datos
+              </button>
+              <button
+                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
+                onClick={() => handleButtonClick("Redes de Datos")}
+                aria-label="Get started"
+              >
+                Redes de Datos
+              </button>
+              <button
+                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
+                onClick={() => handleButtonClick("Planeación y Gestión de Proyectos de TI")}
+                aria-label="Get started"
+              >
+                Planeación y Gestión de Proyectos de TI
+              </button>
+              <button
+                className="w-fit lg:w-[200px] h-fit contained-button mx-auto p-2"
+                onClick={() => handleButtonClick("Cibernética e Inteligencia Artificial (Ciencia de Sistemas)")}
+                aria-label="Get started"
+              >
+                Cibernética e Inteligencia Artificial (Ciencia de Sistemas)
+              </button>
+            </div>
+            
+            {isModalOpen && <InvitationModal setIsOpen={setIsModalOpen} materias={materias} />}
           </div>
         </div>
       </motion.div>

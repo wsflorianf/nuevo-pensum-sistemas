@@ -3,5 +3,14 @@ import react from '@astrojs/react';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  integrations: [react(), tailwind()]
+  integrations: [react({
+    include: ['**/react/*'],
+  }), tailwind()],
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
+  },
 });
