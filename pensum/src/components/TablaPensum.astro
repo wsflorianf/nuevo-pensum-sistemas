@@ -37,61 +37,82 @@ niveles.forEach((nivel) => {
         <>
           <h2>{nivel.nombre}</h2>
 
-          <div class="materias">
-          
-          {nivel.materias.map((materia) => (
-            <Materia {...materia} />
-          ))}
+          <div class='materias'>
+            {nivel.materias.map((materia) => (
+              <Materia {...materia} />
+            ))}
           </div>
 
-          <table class="total">
-            <tr>
-              <td>TD: {datosTotales[index].tdTotal}</td>
-              <td>TC: {datosTotales[index].tcTotal}</td>
-              <td>TA: {datosTotales[index].taTotal}</td>
-            </tr>
-            <tr><td colspan="3">Créditos: {datosTotales[index].creditosTotal}</td></tr>
-          </table>
+          
 
+          <table class='total'>
+            
+            <tr>
+              <td>TD</td>
+              <td>TC</td>
+              <td>TA</td>
+            </tr>
+            <tr>
+              <td>{datosTotales[index].tdTotal}</td>
+              <td>{datosTotales[index].tcTotal}</td>
+              <td>{datosTotales[index].taTotal}</td>
+            </tr>
+            <tr>
+              <td colspan='3'>Créditos: {datosTotales[index].creditosTotal}</td>
+            </tr>
+            
+          </table>
+          
         </>
       )
     })
   }
 </div>
 
-<style> 
-  
-  h2{
+<style>
+  h2 {
     text-align: center;
+    margin: 1rem 0;    
   }
 
-  .materias{
+  .materias {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 1rem;
   }
 
-  .total{
-   text-align: center;
-   border-collapse: collapse;
-   
+  .total {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
-  .total td{
+  .total td {
     border: 1px black solid;
   }
 
   @media screen and (min-width: 800px) {
-  
 
-  #pensum {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(3, auto);    
-    grid-template-columns: repeat(9, 1fr);
-    gap: 14px;  
+    h2{
+      margin: 0;
+    }
+
+    .materias{
+      
+    }
+
+    .total{
+      margin: 0;
+    }
+
+    #pensum {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(9, 1fr);
+      gap: 14px;
+    }
   }
-
-  
-}
 </style>

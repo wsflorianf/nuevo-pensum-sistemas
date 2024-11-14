@@ -1,42 +1,46 @@
 ---
-import {type MateriaType} from '@/types/informacion'
+import { type MateriaType } from '@/types/informacion'
 
-interface Props extends MateriaType{
+interface Props extends MateriaType {}
 
-}
-
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props;
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<div class="materia">
-	<div class="pre"><span>Pre:</span> </div>
-	<div class="corr"><span>Corr:</span></div>
-	<div class="creditos"><span>Créditos: </span>{creditos}</div>
-	<div class="horas">
-		<div class="directo"><span>TD: </span>{td}</div>
-		<div class="colaborativo"><span>TC: </span>{tc}</div>
-		<div class="autonomo"><span>TA: </span>{ta}</div>
-	</div>
-	<div class={'nombre '+tipo}>
-		{nombre}
-	</div>
-	
-</div>
+<a class='materia' href={urlSyllabus} itemtype={tipo}>
+  <div class="cod"><span>Código: </span>{codigo}</div>
+  <div class='pre'><span>Pre:</span></div>
+  <div class='corr'><span>Corr:</span></div>
+  <div class='creditos'><span>Créditos: </span>{creditos}</div>
+  <div class='horas'>
+    <div class='directo'><span>TD: </span>{td}</div>
+    <div class='colaborativo'><span>TC: </span>{tc}</div>
+    <div class='autonomo'><span>TA: </span>{ta}</div>
+  </div>
+  <div class={'nombre ' + tipo}>
+    {nombre}
+  </div>
+</a>
+
+<script>
+  document.getElementsByClassName("materia")
+</script>
 
 <style>
   a {
     display: block;
+    text-decoration: none;
+    color: black;
   }
 
   .materia {
     border: 1px black solid;
-    width: 100%;
+    
   }
 
   .materia div {
     padding: 0 4px;
-	width: 100%;
-	border: 1px black solid;
+    width: 100%;
+    border: 1px black solid;
   }
 
   span {
@@ -88,5 +92,18 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props;
 
   .EX {
     background-color: #fcd5b4;
+  }
+
+  @media screen and (min-width: 800px) {
+    .materia {
+      width: 100%;
+      transition: 0.2s all;
+    }
+
+    .materia:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
+    }
   }
 </style>
