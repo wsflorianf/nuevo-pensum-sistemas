@@ -428,7 +428,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 37,
         nombre: 'CURSO OBLIGATORIO II RF',
-        creditos: 4,
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -450,7 +450,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 39,
         nombre: 'Extrínseca III',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -461,7 +461,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 40,
         nombre: 'INGENIERIA ECONÓMICA',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -510,7 +510,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 44,
         nombre: 'SISTEMAS OPERATIVOS',
-        creditos: 4,
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -521,7 +521,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 45,
         nombre: 'TEORIA DE LA INFORMACIÓN',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -532,7 +532,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 351,
         nombre: 'METODOLOGÍA DE LA INVESTIGACIÓN',
-        creditos: 4,
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -548,7 +548,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 46,
         nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
-        creditos: 3,
+        creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
@@ -559,7 +559,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 47,
         nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
-        creditos: 3,
+        creditos: 4,
         td: 2,
         tc: 2,
         ta: 2,
@@ -581,7 +581,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: 49,
         nombre: 'GRUPO DE INVESTIGACIÓN',
-        creditos: 4,
+        creditos: 1,
         td: 2,
         tc: 2,
         ta: 2,
