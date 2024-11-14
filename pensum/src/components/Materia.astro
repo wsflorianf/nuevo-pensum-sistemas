@@ -3,6 +3,7 @@ import { type MateriaType } from '@/types/informacion'
 
 interface Props extends MateriaType {}
 
+//Props del componente
 const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
@@ -23,16 +24,42 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <script>
   
+  //Se seleccionan todas las materias para asignarles el evento necesario según corresponda el tipo (EX, AI o el resto)
     document.querySelectorAll('.materia').forEach((materia) => {
+
+      //Se obtiene el tipo del atributo data-type
       let tipo = materia.getAttribute('data-type')
+
+      //Si es EX no se le asigna eventListener
       if (tipo == 'EX') {
-      } else if (tipo == 'AI') {
+      } 
+      //Para AI se redirige hacia las opciones posibles para este espacio
+      else if (tipo == 'AI') {
         materia.addEventListener('click', () => {
           alert(materia.getAttribute('data-type'))
+
         })
-      } else {
+      }
+      //Para las demás se muestra una ventana modal con su syllabus
+      else {
         materia.addEventListener('click', () => {
-          alert(materia.getAttribute('data-url'))
+          
+          //Se lleva hacia la parte superior del sitio
+          scrollTo({top: 0 })
+
+          //Se quita temporalmente el scroll al sitio
+          document.body.style.overflow = 'hidden'
+
+          
+          const pdfView = document.querySelector("#modal-pdf")
+          const iframe = document.createElement("iframe")
+
+          //Se establece el modal como abierto
+          pdfView?.setAttribute("data-mode", "open")
+
+          //Se agrega el iframe para visualizar el PDF con su respectiva url, la url se obtiene del atributo data-url de la materia
+          iframe.src = materia.getAttribute("data-url") || ""
+          pdfView?.appendChild(iframe);
         })
       }
     })
