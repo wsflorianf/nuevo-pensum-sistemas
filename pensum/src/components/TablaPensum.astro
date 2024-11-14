@@ -44,14 +44,14 @@ niveles.forEach((nivel) => {
           ))}
           </div>
 
-          <div class="total">
-            <div>
-              <p>TD: {datosTotales[index].tdTotal}</p>
-              <p>TC: {datosTotales[index].tcTotal}</p>
-              <p>TA: {datosTotales[index].taTotal}</p>
-            </div>
-            <p>Créditos: {datosTotales[index].creditosTotal}</p>
-          </div>
+          <table class="total">
+            <tr>
+              <td>TD: {datosTotales[index].tdTotal}</td>
+              <td>TC: {datosTotales[index].tcTotal}</td>
+              <td>TA: {datosTotales[index].taTotal}</td>
+            </tr>
+            <tr><td colspan="3">Créditos: {datosTotales[index].creditosTotal}</td></tr>
+          </table>
 
         </>
       )
@@ -60,17 +60,9 @@ niveles.forEach((nivel) => {
 </div>
 
 <style> 
-  @media screen and (min-width: 800px) {
   
-
-    #pensum {
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-rows: repeat(3, auto);    
-      gap: 20px;  
-    }
-
-    
+  h2{
+    text-align: center;
   }
 
   .materias{
@@ -81,11 +73,25 @@ niveles.forEach((nivel) => {
 
   .total{
    text-align: center;
+   border-collapse: collapse;
+   
   }
 
-  .total div{
-    display: flex;
-    gap: 10px;
+  .total td{
+    border: 1px black solid;
   }
 
+  @media screen and (min-width: 800px) {
+  
+
+  #pensum {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);    
+    grid-template-columns: repeat(9, 1fr);
+    gap: 14px;  
+  }
+
+  
+}
 </style>
