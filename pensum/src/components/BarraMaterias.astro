@@ -1,0 +1,52 @@
+---
+// No necesita lógica 
+---
+
+<div class="barra-materias">
+  <div class="materia CO">Complementario</div>
+  <div class="materia CB">Ciencias Básicas</div>
+  <div class="materia BI">Básicas de Ingeniería</div>
+  <div class="materia AI">Aplicadas de Ing</div>
+  <div class="materia EX">Extrínsecas</div>
+</div>
+
+<style>
+	.barra-materias {
+		display: flex;
+		gap: 10px;
+		padding: 10px;
+		background-color: #ffffff;
+		border-radius: 8px;
+		justify-content: center;
+	}
+
+	.materia {
+		padding: 5px 10px;
+		color: white;
+		font-weight: bold;
+		border: 2px solid black;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+  /* Colores de cada tipo de materia */
+    .CO { 
+		background-color: #0070C0; 
+	} /* Complementario */
+	.CB { 
+		background-color: #FFFF00; 
+		color: black; 
+	} /* Ciencias Básicas */
+	.BI { 
+		background-color: #92D050; 
+		color: black; 
+	} /* Básicas de Ingeniería */
+	.AI { 
+		background-color: #BFBFBF; 
+		color: black; 
+	} /* Aplicadas de Ing */
+	.EX { 
+		background-color: #F4B084; 
+		color: black; 
+	} /* Extrínsecas */
+</style>

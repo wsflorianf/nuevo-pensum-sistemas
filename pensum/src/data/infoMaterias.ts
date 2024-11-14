@@ -6,19 +6,19 @@ const infoMaterias: NivelType[] = [
     materias: [
       {
         codigo: 1,
-        nombre: 'Materia 1',
-        creditos: 4,
+        nombre: 'CÁLCULO DIFERENCIAL',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
+        tipo: 'CB',
       },
       {
         codigo: 2,
-        nombre: 'Materia 2',
-        creditos: 3,
+        nombre: 'MATEMÁTICAS DISCRETAS',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -28,19 +28,19 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 3,
-        nombre: 'Materia 3',
-        creditos: 4,
+        nombre: 'FÍSICA I',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
+        tipo: 'CB',
       },
       {
         codigo: 4,
-        nombre: 'Materia 4',
-        creditos: 4,
+        nombre: 'PROGRAMACIÓN BÁSICA',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -50,14 +50,35 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 5,
-        nombre: 'Materia 5',
-        creditos: 4,
+        nombre: 'ARQUITECTURA DE COMPUTADORES',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'CB',
+        tipo: 'BI',
+      },
+      {
+        codigo: 6,
+        nombre: 'SEMINARIO DE INGENIERÍA',
+        creditos: 1,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },      {
+        codigo: 7,
+        nombre: 'CÁTEDRA FRANCISCO JOSÉ DE CALDAS',
+        creditos: 1,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'CO',
       },
     ],
   },
@@ -65,42 +86,20 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 2',
     materias: [
       {
-        codigo: 6,
-        nombre: 'Materia 6',
-        creditos: 3,
-        td: 2,
-        tc: 2,
-        ta: 2,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
-      },
-      {
-        codigo: 7,
-        nombre: 'Materia 7',
-        creditos: 3,
-        td: 2,
-        tc: 2,
-        ta: 2,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
-      },
-      {
         codigo: 8,
-        nombre: 'Materia 8',
-        creditos: 4,
+        nombre: 'CÁLCULO INTEGRAL',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
+        tipo: 'CB',
       },
       {
         codigo: 9,
-        nombre: 'Materia 9',
-        creditos: 4,
+        nombre: 'ÁLGEBRA LINEAL',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -110,8 +109,8 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 10,
-        nombre: 'Materia 10',
-        creditos: 4,
+        nombre: 'FÍSICA II',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -119,14 +118,9 @@ const infoMaterias: NivelType[] = [
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'CB',
       },
-    ],
-  },
-  {
-    nombre: 'Nivel 3',
-    materias: [
       {
         codigo: 11,
-        nombre: 'Materia 11',
+        nombre: 'PROGRAMACIÓN ORIENTADA A OBJETOS',
         creditos: 3,
         td: 2,
         tc: 2,
@@ -137,8 +131,8 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 12,
-        nombre: 'Materia 12',
-        creditos: 3,
+        nombre: 'TEORÍA DE SISTEMAS',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -148,19 +142,35 @@ const infoMaterias: NivelType[] = [
       },
       {
         codigo: 13,
-        nombre: 'Materia 13',
-        creditos: 4,
+        nombre: 'HISTORIA Y CULTURA COLOMBIANA',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
+        tipo: 'CO',
       },
       {
         codigo: 14,
-        nombre: 'Materia 14',
-        creditos: 4,
+        nombre: 'CÁTEDRA DEMOCRACIA Y CIUDADANÍA',
+        creditos: 1,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'CO',
+      },
+    ],
+  },
+  {
+    nombre: 'Nivel 3',
+    materias: [
+      {
+        codigo: 15,
+        nombre: 'CÁLCULO MULTIVARIADO',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -169,9 +179,64 @@ const infoMaterias: NivelType[] = [
         tipo: 'CB',
       },
       {
-        codigo: 15,
-        nombre: 'Materia 15',
-        creditos: 4,
+        codigo: 16,
+        nombre: 'PROBABILIDAD Y ESTADÍSTICA',
+        creditos: 3,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      {
+        codigo: 17,
+        nombre: 'CIENCIAS DE LA COMPUTACIÓN I',
+        creditos: 3,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      {
+        codigo: 18,
+        nombre: 'PROGRAMACIÓN AVANZADA',
+        creditos: 3,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      {
+        codigo: 19,
+        nombre: 'ANÁLISIS Y DISEÑO DE SISTEMAS',
+        creditos: 2,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      {
+        codigo: 20,
+        nombre: 'EXTRÍNSECA I',
+        creditos: 1,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'EX',
+      },
+      {
+        codigo: 21,
+        nombre: 'GRUPO DE TRABAJO',
+        creditos: 1,
         td: 2,
         tc: 2,
         ta: 2,
@@ -185,8 +250,30 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 4',
     materias: [
       {
-        codigo: 16,
-        nombre: 'Materia 16',
+        codigo: 22,
+        nombre: 'ECUACIONES DIFERENCIALES',
+        creditos: 3,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'CB',
+      },
+      {
+        codigo: 23,
+        nombre: 'MÉTODOS NÚMERICOS',
+        creditos: 2,
+        td: 2,
+        tc: 2,
+        ta: 2,
+        urlSyllabus:
+          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+        tipo: 'BI',
+      },
+      {
+        codigo: 24,
+        nombre: 'CIENCIAS DE LA COMPUTACIÓN II',
         creditos: 3,
         td: 2,
         tc: 2,
@@ -196,8 +283,8 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 17,
-        nombre: 'Materia 17',
+        codigo: 25,
+        nombre: 'MODELOS DE PROGRAMACIÓN',
         creditos: 3,
         td: 2,
         tc: 2,
@@ -207,9 +294,9 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 18,
-        nombre: 'Materia 18',
-        creditos: 4,
+        codigo: 26,
+        nombre: 'INVESTIGACIÓN DE OPERACIONES I',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -218,20 +305,20 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 19,
-        nombre: 'Materia 19',
-        creditos: 4,
+        codigo: 27,
+        nombre: 'EXTRÍNSECA II',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
         urlSyllabus:
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
-        tipo: 'BI',
+        tipo: 'EX',
       },
       {
-        codigo: 20,
-        nombre: 'Materia 20',
-        creditos: 4,
+        codigo: 28,
+        nombre: 'ECONOMÍA',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -245,8 +332,8 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 5',
     materias: [
       {
-        codigo: 21,
-        nombre: 'Materia 21',
+        codigo: 29,
+        nombre: 'MATEMÁTICAS ESPECIALES',
         creditos: 3,
         td: 2,
         tc: 2,
@@ -256,8 +343,8 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 22,
-        nombre: 'Materia 22',
+        codigo: 30,
+        nombre: 'FUNDAMENTOS DE INGENIERÍA DE SOFTWARE',
         creditos: 3,
         td: 2,
         tc: 2,
@@ -267,9 +354,9 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 23,
-        nombre: 'Materia 23',
-        creditos: 4,
+        codigo: 31,
+        nombre: 'FUNDAMENTOS DE REDES DE COMUNICACIONES',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -278,9 +365,9 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 24,
-        nombre: 'Materia 24',
-        creditos: 4,
+        codigo: 32,
+        nombre: 'BASES DE DATOS',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -289,9 +376,9 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 25,
-        nombre: 'Materia 25',
-        creditos: 4,
+        codigo: 33,
+        nombre: 'FUNDAMENTOS DE CIENCIA DE SISTEMAS',
+        creditos: 3,
         td: 2,
         tc: 2,
         ta: 2,
@@ -300,9 +387,9 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 251,
-        nombre: 'Materia 251',
-        creditos: 4,
+        codigo: 34,
+        nombre: 'INVESTICACIÓN DE OPERACIONES II',
+        creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
@@ -317,7 +404,7 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 6',
     materias: [
       {
-        codigo: 26,
+        codigo: 35,
         nombre: 'PROCESOS ESTOCÁSTICOS',
         creditos: 3,
         td: 2,
@@ -328,7 +415,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 27,
+        codigo: 36,
         nombre: 'CURSO OBLIGATORIO I RF',
         creditos: 3,
         td: 2,
@@ -339,7 +426,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 28,
+        codigo: 37,
         nombre: 'CURSO OBLIGATORIO II RF',
         creditos: 4,
         td: 2,
@@ -350,7 +437,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 29,
+        codigo: 38,
         nombre: 'CURSO ELECTIVO I RF',
         creditos: 4,
         td: 2,
@@ -361,7 +448,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 30,
+        codigo: 39,
         nombre: 'Extrínseca III',
         creditos: 4,
         td: 2,
@@ -372,7 +459,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'EX',
       },
       {
-        codigo: 301,
+        codigo: 40,
         nombre: 'INGENIERIA ECONÓMICA',
         creditos: 4,
         td: 2,
@@ -388,7 +475,7 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 7',
     materias: [
       {
-        codigo: 31,
+        codigo: 41,
         nombre: 'CURSO OBLIGATORIO III RF',
         creditos: 3,
         td: 2,
@@ -399,7 +486,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 32,
+        codigo: 42,
         nombre: 'CURSO OBLIGATORIO IV RF',
         creditos: 3,
         td: 2,
@@ -410,7 +497,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 33,
+        codigo: 43,
         nombre: 'CURSO ELECTIVO II RF',
         creditos: 4,
         td: 2,
@@ -421,7 +508,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 34,
+        codigo: 44,
         nombre: 'SISTEMAS OPERATIVOS',
         creditos: 4,
         td: 2,
@@ -432,7 +519,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'BI',
       },
       {
-        codigo: 35,
+        codigo: 45,
         nombre: 'TEORIA DE LA INFORMACIÓN',
         creditos: 4,
         td: 2,
@@ -459,7 +546,7 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 8',
     materias: [
       {
-        codigo: 36,
+        codigo: 46,
         nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
         creditos: 3,
         td: 2,
@@ -470,7 +557,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 37,
+        codigo: 47,
         nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
         creditos: 3,
         td: 2,
@@ -481,7 +568,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 38,
+        codigo: 48,
         nombre: 'CURSO ELECTIVO III RF',
         creditos: 4,
         td: 2,
@@ -492,7 +579,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 39,
+        codigo: 49,
         nombre: 'GRUPO DE INVESTIGACIÓN',
         creditos: 4,
         td: 2,
@@ -503,7 +590,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'CO',
       },
       {
-        codigo: 40,
+        codigo: 50,
         nombre: 'FORMULACIÓN Y EVALUACIÓN DE PROYECTOS',
         creditos: 2,
         td: 2,
@@ -530,7 +617,7 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 9',
     materias: [
       {
-        codigo: 41,
+        codigo: 51,
         nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
         creditos: 4,
         td: 2,
@@ -541,7 +628,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 42,
+        codigo: 52,
         nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
         creditos: 4,
         td: 2,
@@ -552,7 +639,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 43,
+        codigo: 53,
         nombre: 'CURSO ELECTIVO IV RF',
         creditos: 4,
         td: 2,
@@ -563,7 +650,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: 44,
+        codigo: 54,
         nombre: 'ÉTICA',
         creditos: 2,
         td: 2,
@@ -574,7 +661,7 @@ const infoMaterias: NivelType[] = [
         tipo: 'CO',
       },
       {
-        codigo: 45,
+        codigo: 55,
         nombre: 'TRABAJO DE GRADO II',
         creditos: 3,
         td: 2,
