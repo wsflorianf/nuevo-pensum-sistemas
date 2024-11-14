@@ -627,6 +627,7 @@ const infoMaterias: NivelType[] = [
           'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
+      // {nombre: "", tipo: "", urlSyllabus: ""},
       {
         codigo: "52",
         nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
