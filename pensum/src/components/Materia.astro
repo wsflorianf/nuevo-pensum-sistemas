@@ -7,7 +7,7 @@ interface Props extends MateriaType {}
 const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<div class='materia' data-url={urlSyllabus} data-name={nombre} data-type={tipo} data-code={codigo}>
+<div class='materia' data-url={urlSyllabus} data-name={nombre} data-type={tipo} data-code={codigo} data-tipo={tipo}>
   <div class='cod'><span>Código: </span>{codigo}</div>
   <div class='pre'><span>Pre:</span></div>
   <div class='corr'><span>Corr:</span></div>
@@ -87,6 +87,9 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 </script>
 
 <style>
+  .materia {
+    transition: opacity 0.3s ease;
+  }
   a {
     display: block;
     text-decoration: none;

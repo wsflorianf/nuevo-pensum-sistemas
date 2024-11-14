@@ -1,33 +1,30 @@
 ---
 import TablaPensum from '@/components/TablaPensum.astro'
 import Layout from '../layouts/Layout.astro'
-import BarraMaterias from '@/components/BarraMaterias.astro';
-import ModalPDF from '@/components/ModalPDF.astro';
+import BarraMateriasReact from '@/components/BarraMateriasReact.jsx'
+import ModalPDF from '@/components/ModalPDF.astro'
 ---
 
 <Layout title="Pensum - Ingeniería de Sistemas">
-	<h1>Universidad Distrital Francisco José de Caldas
+  <h1>
+    Universidad Distrital Francisco José de Caldas
     <br>
-    <span>Plan de Estudios - Ingeniería de Sistemas</span></h1>
-	<main>
-		<TablaPensum/>
-		
-	</main>
-
-  <br>
-
-  <BarraMaterias/>
-	
+    <span>Plan de Estudios - Ingeniería de Sistemas</span>
+  </h1>
+  <main>
+    
+    <TablaPensum/>
+  </main>
+  <BarraMateriasReact client:load />
   <ModalPDF/>
-
 </Layout>
 
 <style>
   h1 {
     text-align: center;
   }
-	
-  h1 span{
+  
+  h1 span {
     font-weight: 500;
   }
 </style>
