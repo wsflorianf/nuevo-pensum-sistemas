@@ -6,8 +6,8 @@ interface Props extends MateriaType {}
 const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<a class='materia' href={urlSyllabus} itemtype={tipo}>
-  <div class="cod"><span>Código: </span>{codigo}</div>
+<div class='materia' data-url={urlSyllabus} data-type={tipo}>
+  <div class='cod'><span>Código: </span>{codigo}</div>
   <div class='pre'><span>Pre:</span></div>
   <div class='corr'><span>Corr:</span></div>
   <div class='creditos'><span>Créditos: </span>{creditos}</div>
@@ -19,10 +19,24 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   <div class={'nombre ' + tipo}>
     {nombre}
   </div>
-</a>
+</div>
 
 <script>
-  document.getElementsByClassName("materia")
+  
+    document.querySelectorAll('.materia').forEach((materia) => {
+      let tipo = materia.getAttribute('data-type')
+      if (tipo == 'EX') {
+      } else if (tipo == 'AI') {
+        materia.addEventListener('click', () => {
+          alert(materia.getAttribute('data-type'))
+        })
+      } else {
+        materia.addEventListener('click', () => {
+          alert(materia.getAttribute('data-url'))
+        })
+      }
+    })
+  
 </script>
 
 <style>
@@ -34,7 +48,6 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
   .materia {
     border: 1px black solid;
-    
   }
 
   .materia div {
