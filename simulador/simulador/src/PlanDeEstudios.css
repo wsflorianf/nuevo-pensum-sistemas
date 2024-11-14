@@ -1,0 +1,25 @@
+.plan-de-estudios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .materia {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .materia input[type="checkbox"] {
+    margin-bottom: 10px;
+  }
+  
+  .materia.aprobada {
+    background-color: #28A745; /* Cambia el color a verde cuando está aprobado */
+  }
+  
