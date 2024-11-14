@@ -119,9 +119,9 @@ export const FeaturesDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-start bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-          <div className="w-full lg:w-1/2 flex flex-col lg:mx-unset">
-            <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
+        <div className="2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-start bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row ">
+          <div className="w-full  flex flex-col lg:mx-unset">
+            <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">
               Nuevos Ejes de Formación
             </h2>
             <p className="mb-7 text-secondaryText leading-loose">
@@ -132,7 +132,7 @@ export const FeaturesDiagonal = () => {
             </p>
             <div className="w-max grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
               <button
-                className="w-fit lg:w-[250px] h-fit contained-button mx-auto p-2"
+                className="w-fit lg:w-full h-fit contained-button mx-auto p-2"
                 onClick={() => handleButtonClick("Análisis, diseño y construcción de software")}
                 aria-label="Get started"
               >

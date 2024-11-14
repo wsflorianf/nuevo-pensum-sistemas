@@ -35,7 +35,7 @@ export const InvitationModal = ({ setIsOpen, materias }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex relative">
-              <div className="w-full lg:w-1/2 flex items-center flex-col justify-center pt-24 sm:pt-0">
+              <div className="w-full flex items-center flex-col justify-center pt-24 sm:pt-0">
                 <div className="flex inline lg:hidden justify-start items-center grow basis-0 mb-8 pr-6">
                   <div className="text-white mr-2 text-8xl">
                     <TailcastLogo />

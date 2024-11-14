@@ -20,7 +20,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
+          <h3 className="text-secondaryColor text-4xl sm:text-3xl  mb-6 sm:mt-32 mt-16  font-bold">
             Descubre la actualizacion curricular
           </h3>
         </motion.div>
@@ -56,7 +56,7 @@ export const Hero = () => {
               Conocer Más
             </button>
             <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition"
+              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
               aria-label="Live demo"
             >
               Descargar Plan
