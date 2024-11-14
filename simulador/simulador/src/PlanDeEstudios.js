@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './PlanDeEstudios.css';
-
+import { simulacion } from './simulacion';
 const Materia = ({ materia, toggleAprobado }) => (
   <div className={`materia ${materia.estado ? 'aprobada' : ''}`}>
     <input
@@ -16,7 +16,7 @@ const Materia = ({ materia, toggleAprobado }) => (
 
 const PlanDeEstudios = () => {
   const [materias, setMaterias] = useState([]);
-
+  const [resultadoSimulacion, setResultadoSimulacion] = useState(null);
   useEffect(() => {
     fetch('/data.json')
       .then((response) => response.json())
@@ -36,6 +36,15 @@ const PlanDeEstudios = () => {
     ));
   };
 
+  const handleSimulacion = () => {
+    // Filtrar las materias seleccionadas (estado: true)
+    const materiasSeleccionadas = materias.filter(materia => !materia.estado);
+    
+    // Llamar a la función simulacion pasando las materias seleccionadas
+    const resultado = simulacion(materiasSeleccionadas);
+    setResultadoSimulacion(resultado);  // Guardar el resultado en el estado
+  };
+
   // Agrupar materias por nivel
   const niveles = materias.reduce((acc, materia) => {
     acc[materia.nivel] = acc[materia.nivel] || [];
@@ -44,15 +53,30 @@ const PlanDeEstudios = () => {
   }, {});
 
   return (
-    <div className="plan-de-estudios">
-      {Object.keys(niveles).map((nivel) => (
-        <div key={nivel} className="nivel-columna">
-          <h3>Nivel {nivel}</h3>
-          {niveles[nivel].map((materia) => (
-            <Materia key={materia.codigo} materia={materia} toggleAprobado={toggleAprobado} />
-          ))}
+    <div>
+        <button onClick={handleSimulacion} className="boton">
+          Simular Avance
+        </button>
+        {resultadoSimulacion && (
+        <div>
+          <h2>Resultado de la Simulación</h2>
+          <p>Créditos Homologados: {resultadoSimulacion.creditosHomologados}</p>
+          <p>Créditos Perdidos: {resultadoSimulacion.creditosPerdidos}</p>
+          <p>Porcentaje de Avance: {resultadoSimulacion.porcentajeAvance}%</p>
+          <p>Semestres Restantes: {Math.ceil(resultadoSimulacion.semestresRestantes)}</p>
+          <p>Requisito de Segunda Lengua: {resultadoSimulacion.requisitoSegundaLengua} créditos</p>
         </div>
-      ))}
+      )}
+      <div className="plan-de-estudios">
+        {Object.keys(niveles).map((nivel) => (
+          <div key={nivel} className="nivel-columna">
+            <h3>Nivel {nivel}</h3>
+            {niveles[nivel].map((materia) => (
+              <Materia key={materia.codigo} materia={materia} toggleAprobado={toggleAprobado} />
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
