@@ -7,7 +7,15 @@ interface Props extends MateriaType {}
 const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 ---
 
-<div class='materia' data-url={urlSyllabus} data-name={nombre} data-type={tipo} data-code={codigo} data-tipo={tipo}>
+<a
+  class='materia'
+  href={urlSyllabus}
+  data-name={nombre}
+  data-type={tipo}
+  data-code={codigo}
+  data-tipo={tipo}
+  onclick={tipo === 'AI' ? '' : 'event.preventDefault()'}
+>
   <div class='cod'><span>Código: </span>{codigo}</div>
 
   <!-- Se quita temporalmente los siguientes campos hasta definir una estructura concreta -->
@@ -24,15 +32,14 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   <div class={'nombre ' + tipo}>
     {nombre}
   </div>
-</div>
+</a>
 
 <script>
-  
   function isMobile() {
-  return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-}
-
-  
+    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+      navigator.userAgent
+    )
+  }
 
   //Se seleccionan todas las materias para asignarles el evento necesario según corresponda el tipo (EX, AI o el resto)
   document.querySelectorAll('.materia').forEach((materia) => {
@@ -41,51 +48,51 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
     //Si es EX no se le asigna eventListener
     if (tipo == 'EX') {
+      materia.addEventListener('click', () => {
+        alert("¡Puedes inscribir materias extrínsecas de cualquier proyecto curricular!")
+      })
     }
     //Para AI se redirige hacia las opciones posibles para este espacio
     else if (tipo == 'AI') {
       materia.addEventListener('click', () => {
-        
         let url = materia.getAttribute('data-url') || ''
 
         window.location.replace(url)
-
       })
     }
     //Para las demás se muestra una ventana modal con su syllabus
     else {
-      materia.addEventListener('click', () => {
+      //Si está en modo movil se quita el atributo onlcick de todas las materias para que el elemnto "a" actúe normal
+      
+      if (isMobile()) {
+        materia.removeAttribute('onclick')
+      } else {
+        materia.addEventListener('click', () => {
+          let url = materia.getAttribute('href') || ''
 
-        let url = materia.getAttribute('data-url') || ''
+          //Se lleva hacia la parte superior del sitio
+          scrollTo({ top: 0 })
 
-        if(isMobile()){
-          window.location.href = url
-          alert("hola")
-        }
-        else{
-        //Se lleva hacia la parte superior del sitio
-        scrollTo({ top: 0 })
+          //Se quita temporalmente el scroll al sitio
+          document.body.style.overflow = 'hidden'
 
-        //Se quita temporalmente el scroll al sitio
-        document.body.style.overflow = 'hidden'
+          const pdfView = document.querySelector('#modal-pdf')
+          const iframe = document.createElement('iframe')
 
-        const pdfView = document.querySelector('#modal-pdf')
-        const iframe = document.createElement('iframe')
+          let titulo = pdfView?.querySelector('h2')
 
-        let titulo = pdfView?.querySelector('h2')
+          if (titulo) {
+            titulo.innerText = materia.getAttribute('data-name') || ''
+          }
 
-        if(titulo){
-          titulo.innerText = materia.getAttribute("data-name") || ""
-        }           
+          //Se establece el modal como abierto
+          pdfView?.setAttribute('data-mode', 'open')
 
-        //Se establece el modal como abierto
-        pdfView?.setAttribute('data-mode', 'open')
-
-        //Se agrega el iframe para visualizar el PDF con su respectiva url, la url se obtiene del atributo data-url de la materia
-        iframe.src = url
-        pdfView?.appendChild(iframe)
+          //Se agrega el iframe para visualizar el PDF con su respectiva url, la url se obtiene del atributo data-url de la materia
+          iframe.src = url
+          pdfView?.appendChild(iframe)
+        })
       }
-      })
     }
   })
 </script>
@@ -176,8 +183,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   }
 
   @media screen and (max-width: 1200px) {
-
-    .materia{
+    .materia {
       height: 120px;
     }
 
@@ -185,11 +191,9 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
       padding: 0 2px;
     }
 
-    .nombre{
+    .nombre {
       padding: 1px;
       font-size: 0.9em;
     }
   }
-
-
 </style>
