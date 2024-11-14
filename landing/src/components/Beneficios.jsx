@@ -36,7 +36,7 @@ const testimonialsData = [
   },
 ];
 
-export const Testimonials = () => (
+export const Beneficios = () => (
   <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark1 relative h-full pb-10">
     <div className="absolute -top-16" id="beneficios" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">

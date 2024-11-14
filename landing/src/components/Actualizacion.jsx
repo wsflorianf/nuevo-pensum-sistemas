@@ -23,9 +23,9 @@ const blogData = [
   },
 ];
 
-export const Blog = () => (
+export const Actualizacion = () => (
   <section className="w-screen flex justify-center bg-bgDark2 relative ">
-    <div className="absolute -top-16" id="blog" />
+    <div className="absolute -top-16" id="actualización" />
     <div className="pb-0 pt-4 bg-bgDark2 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px]  ">
       <motion.div
         initial={{ opacity: 0 }}

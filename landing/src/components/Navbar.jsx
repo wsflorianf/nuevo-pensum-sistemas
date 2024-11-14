@@ -10,7 +10,7 @@ const navbarLinks = [
   { label: "Ejes", href: "/#ejes", ariaLabel: "Ejes" },
   { label: "Flexibilidad", href: "/#flex", ariaLabel: "Flexibilidad" },
   { label: "Beneficios", href: "/#beneficios", ariaLabel: "Beneficios" },
-  { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "Actualización", href: "/#actualización", ariaLabel: "actualización" },
   { label: "Preguntas", href: "/#preguntas", ariaLabel: "Preguntas" },
 ];
 

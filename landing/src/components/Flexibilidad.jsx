@@ -5,7 +5,7 @@ import Ruta from "../assets/images/Ruta.png";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-export const Pricing = () => {
+export const Flexibilidad = () => {
   const [isMonthly, setIsMonthly] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -25,9 +25,9 @@ export const Pricing = () => {
         >
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center mb-10">
-            <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">
-            La Flexibilidad Del Proyecto
-            </h2>
+              <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">
+                La Flexibilidad Del Proyecto
+              </h2>
               <h2 className="mt-6 mb-6 text-2xl lg:text-2xl font-bold font-heading text-primaryText">
                 Elige la mejor ruta
               </h2>
@@ -87,26 +87,26 @@ export const Pricing = () => {
                     )}
                   </div>
                 </div>
-                <h1 className="block-subtitle text-center">
-                Componente Común
-              </h1>
-                <div class="overflow-x-auto mt-10 rounded-3xl">
-                  <table class="min-w-full bg-white border border-gray-300">
+                <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">
+                  Componente en común
+                </h2>
+                <div class="overflow-x-auto">
+                  <table class="min-w-full bg-bgDark1 border border-gray-700">
                     <thead>
                       <tr>
-                        <th class="py-2 px-4 bg-gray-200 border-b border-gray-300 text-left">
+                        <th class="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
                           Área
                         </th>
-                        <th class="py-2 px-4 bg-gray-200 border-b border-gray-300 text-left">
+                        <th class="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
                           Resolución 053 de 2011
                         </th>
-                        <th class="py-2 px-4 bg-gray-200 border-b border-gray-300 text-left">
+                        <th class="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
                           Créditos
                         </th>
-                        <th class="py-2 px-4 bg-gray-200 border-b border-gray-300 text-left">
+                        <th class="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
                           Plan de Estudios 2023
                         </th>
-                        <th class="py-2 px-4 bg-gray-200 border-b border-gray-300 text-left">
+                        <th class="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
                           Créditos
                         </th>
                       </tr>
@@ -114,274 +114,297 @@ export const Pricing = () => {
                     <tbody>
                       <tr>
                         <td
-                          class="py-2 px-4 border-b border-gray-300"
+                          class="py-2 px-4 border-b border-gray-700 text-white"
                           rowspan="11"
                         >
                           Complementaria
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Producción y Comprensión de Textos
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Producción y Comprensión de Textos
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">0</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          0
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Segundo Idioma
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">6</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          6
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Segundo Idioma
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">0</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          0
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cátedra Caldas
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cátedra Caldas
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cátedra Democracia y Ciudadanía
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cátedra Democracia y Ciudadanía
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Ética y Bioética
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Ética y Bioética
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Hombre, Sociedad y Ecología
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">1</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          1
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white"></td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Historia y Cultura Colombiana
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white"></td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Ingeniería Económica
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Ingeniería Económica
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Formulación y Evaluación de Proyectos
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Formulación y Evaluación de Proyectos
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Economía
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Economía
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          2
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
                           Total
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
                           22
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
+                        <td class="py-2 px-4 border-b border-gray-700"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
                           10
                         </td>
                       </tr>
 
                       <tr>
                         <td
-                          class="py-2 px-4 border-b border-gray-300"
+                          class="py-2 px-4 border-b border-gray-700 text-white"
                           rowspan="10"
                         >
                           Ciencias Básicas
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Diferencial
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">4</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          4
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Precálculo
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">0</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          0
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Integral
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Diferencial
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Multivariado
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Integral
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Ecuaciones Diferenciales
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Cálculo Multivariado
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Álgebra Lineal
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Ecuaciones Diferenciales
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Física I Newtoniana
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
                           Álgebra Lineal
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Física II Electromagnetismo
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Probabilidad y Estadística
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Física I Newtoniana
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Probabilidad y Estadística
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Física III Ondas y Moderna
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Física Mecánica
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Física II Electromagnetismo
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Física Mecánica
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
                       </tr>
                       <tr>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Física Electricidad y Magnetismo
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Física Electricidad y Magnetismo
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Química
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          Química
+                        </td>
+                        <td class="py-2 px-4 border-b border-gray-700 text-white">
+                          3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
                           Total
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
-                          25
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                          28
                         </td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
+                        <td class="py-2 px-4 border-b border-gray-700"></td>
+                        <td class="py-2 px-4 border-b border-gray-700 font-bold text-white">
                           24
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td
-                          class="py-2 px-4 border-b border-gray-300"
-                          rowspan="5"
-                        >
-                          Básica
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Seminario de Ingeniería
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Seminario de Ingeniería
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">2</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Programación Básica
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Programación Básica
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Programación Orientada a Objetos
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Programación Orientada a Objetos
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">3</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Trabajo de Grado
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">4</td>
-                        <td class="py-2 px-4 border-b border-gray-300">
-                          Trabajo de Grado
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300">4</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
-                          Total
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
-                          11
-                        </td>
-                        <td class="py-2 px-4 border-b border-gray-300"></td>
-                        <td class="py-2 px-4 border-b border-gray-300 font-bold">
-                          13
                         </td>
                       </tr>
                     </tbody>
