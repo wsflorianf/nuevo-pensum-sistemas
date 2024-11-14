@@ -31,7 +31,7 @@ export const InvitationModal = ({ setIsOpen, materias }) => {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-bgDarkTransparentLighter main-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8 fixed mx-auto z-50"
+            className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-bgDarkTransparentLighter main-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8  mx-auto z-50"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex relative">
