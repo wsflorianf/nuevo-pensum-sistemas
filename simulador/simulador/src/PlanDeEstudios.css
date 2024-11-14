@@ -1,5 +1,6 @@
 body{
   background-color: #f0e4d7;
+  text-align: center;
 }
 .plan-de-estudios {
   display: flex;
@@ -61,4 +62,25 @@ h2 {
 
 .materia.aprobada {
   background-color: #28A745; /* Cambia el color a verde cuando está aprobado */
+}
+
+.boton {
+  background-color: #0069d9; /* Azul más oscuro para el botón */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.boton:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+.boton:active {
+  background-color: #004085; /* Azul aún más oscuro al hacer click */
+  transform: scale(1); /* Vuelve al tamaño original */
 }
