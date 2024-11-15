@@ -40,6 +40,15 @@ const PlanDeEstudios = () => {
       return nuevasMaterias;
     });
   };
+  const aprobarMateriasNivel = (nivelSeleccionado) => {
+    setMaterias((prevMaterias) =>
+      prevMaterias.map((materia) =>
+        materia.nivel === nivelSeleccionado
+          ? { ...materia, estado: !materia.estado }  // Cambia el estado de true a false y viceversa
+          : materia
+      )
+    );
+  };
 
   const handleSimulacion = () => {
     // Filtrar las materias seleccionadas (estado: true)
@@ -62,7 +71,9 @@ const PlanDeEstudios = () => {
 
   return (
     <div id="contenedorSimulacion">
-        <button onClick={handleSimulacion} className="boton">
+        <button onClick={handleSimulacion} 
+          className={!materias.some((materia) => materia.estado === true) ? 'boton-deshabilitado' : 'boton'}
+          disabled={!materias.some((materia) => materia.estado === true)}>
           Simular Avance
         </button>
         {resultadoSimulacion && (
@@ -78,7 +89,7 @@ const PlanDeEstudios = () => {
       <div className="plan-de-estudios">
         {Object.keys(niveles).map((nivel) => (
           <div key={nivel} className="nivel-columna">
-            <h3>Nivel {nivel}</h3>
+            <h3 onClick={()=>aprobarMateriasNivel(Number(nivel))}>Nivel {nivel}</h3>
             {niveles[nivel].map((materia) => (
               <Materia key={materia.codigo} materia={materia} toggleAprobado={toggleAprobado} />
             ))}

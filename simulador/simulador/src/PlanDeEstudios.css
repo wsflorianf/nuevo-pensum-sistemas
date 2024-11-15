@@ -104,7 +104,9 @@ h2 {
   transition: background-color 0.3s, transform 0.2s ease-in-out;
   letter-spacing: 1px;
 }
-
+.boton-deshabilitado {
+  display: none;
+}
 .boton:hover {
   background-color: RGB(48 49 54); /* Azul más oscuro al pasar el mouse */
   transform: scale(1.05); /* Efecto de zoom en hover */
@@ -114,6 +116,7 @@ h2 {
   background-color: #004085; /* Azul aún más oscuro al hacer click */
   transform: scale(1); /* Vuelve al tamaño original */
 }
+
 
 @media (max-width: 1720px){
   .nivel-columna {
