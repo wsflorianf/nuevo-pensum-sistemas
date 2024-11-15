@@ -9,11 +9,6 @@ export const simulacion = (materiasSeleccionadas) => {
     let indiceSeleccionEstadistica = materiasSeleccionadas.findIndex((materia) => materia.nombre === "Estadística");
     let indiceSeleccionProbabilidad = materiasSeleccionadas.findIndex((materia) => materia.nombre === "Probabilidad");
     
-    console.log("materiasSeleccionadas: ")
-    console.log(materiasSeleccionadas);
-    console.log(indiceSeleccionEstadistica);
-    console.log(indiceSeleccionProbabilidad);
-    
     let data = {
         creditosPerdidos: 0,
         creditosHomologados: 0,
@@ -127,12 +122,6 @@ export const simulacion = (materiasSeleccionadas) => {
 
     data.porcentajeAvance = (data.creditosHomologados*100)/150;
     data.semestresRestantes = (150 - data.creditosHomologados)/16;
-    console.log("Creditos H: " + data.creditosHomologados);
-    console.log("Creditos P: " + data.creditosPerdidos);
-    console.log("% Avance: " + data.porcentajeAvance);
-    console.log("semestres Res: " + data.semestresRestantes);
-    console.log("Requisitos: " + data.requisitoSegundaLengua);
-    
     
     return data
 }

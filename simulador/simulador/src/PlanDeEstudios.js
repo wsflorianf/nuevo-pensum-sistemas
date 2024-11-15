@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './PlanDeEstudios.css';
 import { simulacion } from './simulacion';
+
 const Materia = ({ materia, toggleAprobado }) => (
   <div className={`materia ${materia.estado ? 'aprobada' : ''}`}>
     <input
@@ -36,15 +37,16 @@ const PlanDeEstudios = () => {
       );
   
       // Agregar console.log para ver el cambio de estado
-      console.log("Estado de materias actualizado:", nuevasMaterias);
+      //console.log("Estado de materias actualizado:", nuevasMaterias);
       return nuevasMaterias;
     });
   };
+
   const aprobarMateriasNivel = (nivelSeleccionado) => {
     setMaterias((prevMaterias) =>
       prevMaterias.map((materia) =>
         materia.nivel === nivelSeleccionado
-          ? { ...materia, estado: !materia.estado }  // Cambia el estado de true a false y viceversa
+          ? { ...materia, estado: true } // Asigna explícitamente 'true'
           : materia
       )
     );
@@ -52,11 +54,7 @@ const PlanDeEstudios = () => {
 
   const handleSimulacion = () => {
     // Filtrar las materias seleccionadas (estado: true)
-    const materiasSeleccionadas = materias.filter(materia => materia.estado);
-    console.log("materias seleccionadas:");
-    
-    console.log(materiasSeleccionadas);
-    
+    const materiasSeleccionadas = materias.filter(materia => materia.estado);  
     // Llamar a la función simulacion pasando las materias seleccionadas
     const resultado = simulacion(materiasSeleccionadas);
     setResultadoSimulacion(resultado);  // Guardar el resultado en el estado
@@ -81,8 +79,8 @@ const PlanDeEstudios = () => {
           <h2>Resultado de la Simulación</h2>
           <p>Créditos Homologados: <strong>{resultadoSimulacion.creditosHomologados}</strong></p>
           <p>Créditos Perdidos: <strong>{resultadoSimulacion.creditosPerdidos}</strong></p>
-          <p>Porcentaje de Avance: <strong>{resultadoSimulacion.porcentajeAvance.toFixed(2)}%</strong></p>
-          <p>Semestres Restantes: <strong>{Math.ceil(resultadoSimulacion.semestresRestantes)}</strong></p>
+          <p>Porcentaje de Avance (en el pensum nuevo): <strong>{resultadoSimulacion.porcentajeAvance.toFixed(2)}%</strong></p>
+          <p>Semestres Necesarios para concluir: <strong>{Math.ceil(resultadoSimulacion.semestresRestantes)}</strong></p>
           <p>Requisito de Segunda Lengua: <strong>{resultadoSimulacion.requisitoSegundaLengua} créditos</strong></p>
         </div>
       )}

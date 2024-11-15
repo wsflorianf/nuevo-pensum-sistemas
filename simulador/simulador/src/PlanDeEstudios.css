@@ -78,8 +78,9 @@ h2 {
 
 .materia p {
   position: relative;
-  z-index: 2; /* Asegura que el texto esté por encima del checkbox */
+  z-index: 2; 
   user-select: none;
+  pointer-events: none;
 }
 
 .materia input[type="checkbox"] {
@@ -131,5 +132,21 @@ h2 {
 }
 
 @media (max-width: 1420px) {
-  /* Puedes agregar reglas aquí si es necesario para dispositivos más pequeños */
+  .plan-de-estudios{
+    flex-wrap: wrap;
+  }
+
+  .nivel-columna{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    box-sizing: border-box;
+  }
+  .materia, .materia.aprobada{
+    width: 150px;
+  }
 }
