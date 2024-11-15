@@ -46,8 +46,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     //Se obtiene el tipo del atributo data-type
     let tipo = materia.getAttribute('data-type')
 
+    //Se previene dar comportamiento si existe alguna materia sin tipo
+    if(!tipo){}
     //Si es EX no se le asigna eventListener
-    if (tipo == 'EX') {
+    else if (tipo == 'EX') {
       materia.addEventListener('click', () => {
         alert("¡Puedes inscribir materias extrínsecas de cualquier proyecto curricular!")
       })
