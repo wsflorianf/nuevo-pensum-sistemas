@@ -1,8 +1,8 @@
-body{
-  background-color: rgb(31 32 35);
+body {
+  background-color: rgb(31, 32, 35);
 }
 
-#contenedorSimulacion{
+#contenedorSimulacion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,17 +29,18 @@ h2 {
   margin-top: 10px;
 }
 
-#resultados{
+#resultados {
   text-align: center;
 }
 
-#resultados p{
+#resultados p {
   color: rgb(174 178 183);
 }
 
-#resultados strong{
+#resultados strong {
   color: #fff;
 }
+
 .nivel-columna {
   display: flex;
   flex-direction: column;
@@ -59,6 +60,7 @@ h2 {
 }
 
 .materia {
+  position: relative;
   font-family: 'Inter', sans-serif;
   padding: 10px;
   text-align: center;
@@ -71,19 +73,24 @@ h2 {
   border-radius: 10%;
   transition: background-color 0.3s;
   width: 95%;
-  height:120px;
+  height: 100px;
 }
 
-.materia p{
+.materia p {
   position: relative;
-  bottom: 100%;
+  z-index: 2; /* Asegura que el texto esté por encima del checkbox */
   user-select: none;
 }
+
 .materia input[type="checkbox"] {
-  opacity: 0;
-  display: hidden; 
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0; /* El checkbox sigue siendo funcional pero no es visible */
+  cursor: pointer;
+  z-index: 1; /* Asegura que el checkbox esté detrás del texto */
 }
 
 .materia.aprobada {
@@ -91,7 +98,7 @@ h2 {
 }
 
 .boton {
-  background-color: rgb(38 39 43); /* Azul más oscuro para el botón */
+  background-color: rgb(38 39 43);
   border-style: solid;
   border-color: rgb(246 178 1);
   border-width: 1px;
@@ -106,24 +113,21 @@ h2 {
 }
 
 .boton:hover {
-  background-color: RGB(48 49 54); /* Azul más oscuro al pasar el mouse */
-  transform: scale(1.05); /* Efecto de zoom en hover */
+  background-color: rgb(48, 49, 54);
+  transform: scale(1.05);
 }
 
 .boton:active {
-  background-color: #004085; /* Azul aún más oscuro al hacer click */
-  transform: scale(1); /* Vuelve al tamaño original */
+  background-color: #004085;
+  transform: scale(1);
 }
 
-@media (max-width: 1720px){
+@media (max-width: 1720px) {
   .nivel-columna {
     width: 120px;
   }
 }
 
-@media (max-width: 1420px){
-  /*Ponerlas materias en horizontal y si no caben las n materias
-  de un nivel, ponerlas debajo, una vez termine el primer nivel poner el
-  nivel 2 y así sucesivamente*/
-
+@media (max-width: 1420px) {
+  /* Puedes agregar reglas aquí si es necesario para dispositivos más pequeños */
 }
