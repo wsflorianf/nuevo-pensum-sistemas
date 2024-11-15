@@ -30,6 +30,12 @@ const { title } = Astro.props
     <slot />
     <!-- wf -->
   </body>
+
+  <script>
+    window.onbeforeprint = ()=>{
+      alert("Recomendamos usar una escala personalizada de 55 en los ajustes de impresión para imprimir el pensum en papel común.")
+    }
+  </script>
 </html>
 <style is:global>
   * {

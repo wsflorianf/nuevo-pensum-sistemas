@@ -134,7 +134,15 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     flex-direction: column;
     font-size: 0.7rem;
     height: 140px;
+    width: 100%;
+    transition: 0.2s all;
   }
+
+  .materia:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
+    }
 
   .nombre {
     display: grid;
@@ -176,20 +184,8 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     background-color: #fcd5b4;
   }
 
-  @media screen and (min-width: 840px) {
-    .materia {
-      width: 100%;
-      transition: 0.2s all;
-    }
 
-    .materia:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-      box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .materia {
       height: 120px;
     }
@@ -200,7 +196,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
     .nombre {
       padding: 1px;
-      font-size: 0.9em;
     }
   }
+
 </style>

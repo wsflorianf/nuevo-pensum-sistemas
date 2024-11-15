@@ -15,7 +15,7 @@ let datosTotales: {
 niveles.forEach((nivel) => {
   let suma = nivel.materias.reduce(
     (totalMaterias, materia) => {
-      if(materia.ta && materia.tc && materia.td && materia.creditos){
+      if (materia.ta && materia.tc && materia.td && materia.creditos) {
         totalMaterias.tdTotal += materia.td
         totalMaterias.tcTotal += materia.tc
         totalMaterias.taTotal += materia.ta
@@ -24,7 +24,7 @@ niveles.forEach((nivel) => {
 
       return totalMaterias
     },
-    
+
     { tdTotal: 0, tcTotal: 0, taTotal: 0, creditosTotal: 0 }
   )
 
@@ -37,7 +37,7 @@ niveles.forEach((nivel) => {
   {
     niveles.map((nivel, index) => {
       return (
-        <>
+        <div class='nivel'>
           <h2>{nivel.nombre}</h2>
 
           <div class='materias'>
@@ -45,27 +45,29 @@ niveles.forEach((nivel) => {
               <Materia {...materia} />
             ))}
           </div>
-          
 
           <table class='total'>
-            <tr>
-              <td title="Trabajo Presencial Directo">TD</td>
-              <td title="Trabajo Mediado_Cooperativo">TC</td>
-              <td title="Trabajo Autónomo">TA</td>
-            </tr>
-            <tr>
-              <td>{datosTotales[index].tdTotal}</td>
-              <td>{datosTotales[index].tcTotal}</td>
-              <td>{datosTotales[index].taTotal}</td>
-            </tr>
-            <tr>
-              <td colspan='3'>Créditos: {datosTotales[index].creditosTotal}</td>
-            </tr>
-            
+            <thead>
+              <tr>
+                <th title='Trabajo Presencial Directo'>TD</th>
+                <th title='Trabajo Mediado_Cooperativo'>TC</th>
+                <th title='Trabajo Autónomo'>TA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{datosTotales[index].tdTotal}</td>
+                <td>{datosTotales[index].tcTotal}</td>
+                <td>{datosTotales[index].taTotal}</td>
+              </tr>
+              <tr>
+                <td colspan='3'>
+                  Créditos: {datosTotales[index].creditosTotal}
+                </td>
+              </tr>
+            </tbody>
           </table>
-          
-          
-        </>
+        </div>
       )
     })
   }
@@ -73,19 +75,24 @@ niveles.forEach((nivel) => {
 
 <style>
   h2 {
-    text-align: center;  
+    text-align: center;
     margin: 0;
   }
 
-  #pensum{
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-rows: repeat(3, auto);
-      grid-template-columns: repeat(9, 1fr);
-      gap: 14px;
+  #pensum {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 14px;
+  }
+
+  .nivel {
+    display: flex;
+    flex-direction: column;
   }
 
   .materias {
+    justify-self: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -97,35 +104,48 @@ niveles.forEach((nivel) => {
     text-align: center;
     border-collapse: collapse;
     width: 100%;
+    margin-top: auto;
     margin-bottom: 2rem;
     background-color: #fff;
   }
 
-  .total td {
+  .total td, th {
     border: 1px black solid;
   }
 
-  .total tr:first-child td{
+  .total th {
     cursor: help;
     background-color: #ddd;
   }
 
-  .total tr:last-child{
+  .total tr:last-child {
     background-color: #ddd;
   }
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 1300px) {
+    #pensum {
+      grid-auto-flow: row;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
-    h2{
-      margin: 1rem 0;  
+  @media screen and (max-width: 840px) {
+    h2 {
+      margin: 1rem 0;
     }
 
-    .total{
+    .total {
       margin: 0;
     }
 
     #pensum {
-      display: block;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #pensum .nivel:last-child{
+      width: 50%;
+      place-self: center;
+      grid-column: span 2;
     }
   }
 </style>
