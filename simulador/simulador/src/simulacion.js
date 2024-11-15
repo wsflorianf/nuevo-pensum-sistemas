@@ -9,10 +9,10 @@ export const simulacion = (materiasSeleccionadas) => {
     let indiceSeleccionEstadistica = materiasSeleccionadas.findIndex((materia) => materia.nombre === "Estadística");
     let indiceSeleccionProbabilidad = materiasSeleccionadas.findIndex((materia) => materia.nombre === "Probabilidad");
     
+    console.log("materiasSeleccionadas: ")
     console.log(materiasSeleccionadas);
     console.log(indiceSeleccionEstadistica);
     console.log(indiceSeleccionProbabilidad);
-    console.log(materiasSeleccionadas[indiceSeleccionArquitectura]);
     
     let data = {
         creditosPerdidos: 0,
@@ -101,10 +101,13 @@ export const simulacion = (materiasSeleccionadas) => {
             data.creditosPerdidos += 1;
         }else if(materiasSeleccionadas[i].nombre === "Segunda Lengua lll"){
             data.requisitoSegundaLengua += 2;
+            data.creditosPerdidos += 2;
         }else if(materiasSeleccionadas[i].nombre === "Segunda Lengua ll"){
             data.requisitoSegundaLengua += 2;
+            data.creditosPerdidos += 2;
         }else if(materiasSeleccionadas[i].nombre === "Segunda Lengua l"){
             data.requisitoSegundaLengua += 2;
+            data.creditosPerdidos += 2;
         }else{
             if (materiasSeleccionadas[i].homologable === true) {
                 data.creditosHomologados += materiasSeleccionadas[i].creditos;
@@ -124,5 +127,12 @@ export const simulacion = (materiasSeleccionadas) => {
 
     data.porcentajeAvance = (data.creditosHomologados*100)/150;
     data.semestresRestantes = (150 - data.creditosHomologados)/16;
+    console.log("Creditos H: " + data.creditosHomologados);
+    console.log("Creditos P: " + data.creditosPerdidos);
+    console.log("% Avance: " + data.porcentajeAvance);
+    console.log("semestres Res: " + data.semestresRestantes);
+    console.log("Requisitos: " + data.requisitoSegundaLengua);
+    
+    
     return data
 }

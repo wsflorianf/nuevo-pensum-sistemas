@@ -1,42 +1,58 @@
 body{
-  background-color: #f0e4d7;
-  text-align: center;
+  background-color: rgb(31 32 35);
 }
+
+#contenedorSimulacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .plan-de-estudios {
   display: flex;
   gap: 20px;
   padding: 20px;
-  overflow-x: auto;
 }
 
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 45px;
-  color: #333;
+  color: rgb(246 178 1);
   text-align: center;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  color: #555;
+  color: rgb(174 178 183);
   text-align: center;
   margin-top: 10px;
 }
 
+#resultados{
+  text-align: center;
+}
+
+#resultados p{
+  color: rgb(174 178 183);
+}
+
+#resultados strong{
+  color: #fff;
+}
 .nivel-columna {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  min-width: 130px;
+  width: 150px;
 }
 
 .nivel-columna h3 {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  color: #333;
-  background-color: #f0f0f0;
+  color: #fff;
+  background-color: rgb(38 39 43);
   padding: 5px;
   border-radius: 5px;
   width: 100%;
@@ -44,43 +60,70 @@ h2 {
 
 .materia {
   font-family: 'Inter', sans-serif;
-  border: 1px solid #333;
   padding: 10px;
   text-align: center;
   font-size: small;
-  background-color: #007BFF;
+  background-color: rgb(31 32 35);
+  border-style: solid;
+  border-color: rgb(246, 178, 1, 0.7);
+  border-width: 1px;
   color: white;
-  border-radius: 3px;
+  border-radius: 10%;
   transition: background-color 0.3s;
   width: 95%;
-  height:150px;
+  height:120px;
 }
 
+.materia p{
+  position: relative;
+  bottom: 100%;
+  user-select: none;
+}
 .materia input[type="checkbox"] {
-  margin-bottom: 10px;
+  opacity: 0;
+  display: hidden; 
+  width: 100%;
+  height: 100%;
 }
 
 .materia.aprobada {
-  background-color: #28A745; /* Cambia el color a verde cuando está aprobado */
+  background-color: rgba(246, 178, 1, 0.7); /* Cambia el color a verde cuando está aprobado */
 }
 
 .boton {
-  background-color: #0069d9; /* Azul más oscuro para el botón */
+  background-color: rgb(38 39 43); /* Azul más oscuro para el botón */
+  border-style: solid;
+  border-color: rgb(246 178 1);
+  border-width: 1px;
+  font-weight: 600;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s ease-in-out;
+  letter-spacing: 1px;
 }
 
 .boton:hover {
-  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  background-color: RGB(48 49 54); /* Azul más oscuro al pasar el mouse */
   transform: scale(1.05); /* Efecto de zoom en hover */
 }
 
 .boton:active {
   background-color: #004085; /* Azul aún más oscuro al hacer click */
   transform: scale(1); /* Vuelve al tamaño original */
+}
+
+@media (max-width: 1720px){
+  .nivel-columna {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1420px){
+  /*Ponerlas materias en horizontal y si no caben las n materias
+  de un nivel, ponerlas debajo, una vez termine el primer nivel poner el
+  nivel 2 y así sucesivamente*/
+
 }

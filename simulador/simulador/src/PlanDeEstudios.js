@@ -6,10 +6,9 @@ const Materia = ({ materia, toggleAprobado }) => (
     <input
       type="checkbox"
       checked={materia.estado}
-      onChange={() => toggleAprobado(materia.codigo)}
+      onChange={() => toggleAprobado(materia.nombre)} // Cambiado a 'materia.nombre'
     />
     <p><strong>{materia.nombre}</strong></p>
-    <p>Código: {materia.codigo}</p>
     <p>Créditos: {materia.creditos}</p>
   </div>
 );
@@ -18,7 +17,7 @@ const PlanDeEstudios = () => {
   const [materias, setMaterias] = useState([]);
   const [resultadoSimulacion, setResultadoSimulacion] = useState(null);
   useEffect(() => {
-    fetch('/data.json')
+    fetch('./data.json')
       .then((response) => response.json())
       .then((data) => {
         const inicializarEstado = data.map(materia => ({
@@ -30,10 +29,10 @@ const PlanDeEstudios = () => {
       .catch((error) => console.error("Error al cargar el JSON:", error));
   }, []);
 
-  const toggleAprobado = (codigo) => {
+  const toggleAprobado = (nombre) => {
     setMaterias((prevMaterias) => {
       const nuevasMaterias = prevMaterias.map((m) =>
-        m.codigo === codigo ? { ...m, estado: !m.estado } : m
+        m.nombre === nombre ? { ...m, estado: !m.estado } : m
       );
   
       // Agregar console.log para ver el cambio de estado
@@ -44,7 +43,10 @@ const PlanDeEstudios = () => {
 
   const handleSimulacion = () => {
     // Filtrar las materias seleccionadas (estado: true)
-    const materiasSeleccionadas = materias.filter(materia => !materia.estado);
+    const materiasSeleccionadas = materias.filter(materia => materia.estado);
+    console.log("materias seleccionadas:");
+    
+    console.log(materiasSeleccionadas);
     
     // Llamar a la función simulacion pasando las materias seleccionadas
     const resultado = simulacion(materiasSeleccionadas);
@@ -59,18 +61,18 @@ const PlanDeEstudios = () => {
   }, {});
 
   return (
-    <div>
+    <div id="contenedorSimulacion">
         <button onClick={handleSimulacion} className="boton">
           Simular Avance
         </button>
         {resultadoSimulacion && (
-        <div>
+        <div id="resultados">
           <h2>Resultado de la Simulación</h2>
-          <p>Créditos Homologados: {resultadoSimulacion.creditosHomologados}</p>
-          <p>Créditos Perdidos: {resultadoSimulacion.creditosPerdidos}</p>
-          <p>Porcentaje de Avance: {resultadoSimulacion.porcentajeAvance}%</p>
-          <p>Semestres Restantes: {Math.ceil(resultadoSimulacion.semestresRestantes)}</p>
-          <p>Requisito de Segunda Lengua: {resultadoSimulacion.requisitoSegundaLengua} créditos</p>
+          <p>Créditos Homologados: <strong>{resultadoSimulacion.creditosHomologados}</strong></p>
+          <p>Créditos Perdidos: <strong>{resultadoSimulacion.creditosPerdidos}</strong></p>
+          <p>Porcentaje de Avance: <strong>{resultadoSimulacion.porcentajeAvance.toFixed(2)}%</strong></p>
+          <p>Semestres Restantes: <strong>{Math.ceil(resultadoSimulacion.semestresRestantes)}</strong></p>
+          <p>Requisito de Segunda Lengua: <strong>{resultadoSimulacion.requisitoSegundaLengua} créditos</strong></p>
         </div>
       )}
       <div className="plan-de-estudios">
