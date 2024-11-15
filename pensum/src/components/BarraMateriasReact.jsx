@@ -60,7 +60,6 @@ const BarraMateriasReact = () => {
           display: flex;
           gap: 10px;
           padding: 10px;
-          background-color: #ffffff;
           border-radius: 8px;
           justify-content: center;
           margin-bottom: 20px;

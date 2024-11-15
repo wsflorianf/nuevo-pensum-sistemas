@@ -45,6 +45,7 @@ niveles.forEach((nivel) => {
               <Materia {...materia} />
             ))}
           </div>
+          
 
           <table class='total'>
             <tr>
@@ -96,16 +97,21 @@ niveles.forEach((nivel) => {
     text-align: center;
     border-collapse: collapse;
     width: 100%;
-    margin: 0;
+    margin-bottom: 2rem;
+    background-color: #fff;
   }
 
   .total td {
     border: 1px black solid;
-    text-decoration: none;
   }
 
   .total tr:first-child td{
     cursor: help;
+    background-color: #ddd;
+  }
+
+  .total tr:last-child{
+    background-color: #ddd;
   }
 
   @media screen and (max-width: 840px) {
@@ -114,12 +120,8 @@ niveles.forEach((nivel) => {
       margin: 1rem 0;  
     }
 
-    .materias{
-      
-    }
-
     .total{
-      margin-bottom: 2rem;
+      margin: 0;
     }
 
     #pensum {

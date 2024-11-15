@@ -47,7 +47,8 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     let tipo = materia.getAttribute('data-type')
 
     //Se previene dar comportamiento si existe alguna materia sin tipo
-    if(!tipo){}
+    if (!tipo) {
+    }
     //Si es EX no se le asigna eventListener
     else if (tipo == 'EX') {
       materia.addEventListener('click', () => {
@@ -65,7 +66,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     //Para las demás se muestra una ventana modal con su syllabus
     else {
       //Si está en modo movil se quita el atributo onlcick de todas las materias para que el elemnto "a" actúe normal
-      
+
       if (isMobile()) {
         materia.removeAttribute('onclick')
       } else {
@@ -112,6 +113,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   .materia {
     border: 1px black solid;
     width: auto;
+  }
+
+  div{
+    background-color: #fff;
   }
 
   .materia div {
