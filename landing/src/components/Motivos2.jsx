@@ -3,6 +3,8 @@ import React from "react";
 
 import feature5 from "../assets/images/feature5.jpg";
 import feature6 from "../assets/images/feature6.jpg";
+import certificado from "../assets/images/certificado.png";
+import planeacion from "../assets/images/planeacion.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Motivos2 = () => (
@@ -18,15 +20,15 @@ export const Motivos2 = () => (
           <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
             <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <img
-                src={feature5.src}
-                alt="Feature image 5"
+                src={certificado.src}
+                alt="Certificado"
                 className="rounded-xl  main-border-gray"
               />
             </div>
             <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
-                src={feature6.src}
-                alt="Feature image 6"
+                src={planeacion.src}
+                alt="Planeacion"
                 className="rounded-xl  main-border-gray"
               />
             </div>

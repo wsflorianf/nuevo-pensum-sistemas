@@ -30,8 +30,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-8 md:px-20 lg:px-4">
-            <h1 className="inline md:hidden">Analytics</h1>
-            <h1 className="hidden md:inline">Ingenieria de Sistemas</h1>
+            <h1>Ingenieria de Sistemas</h1>
           </div>
         </motion.div>
         <motion.div

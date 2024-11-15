@@ -4,6 +4,10 @@ import feature1 from "../assets/images/feature1.jpg";
 import feature2 from "../assets/images/feature2.jpg";
 import feature3 from "../assets/images/feature3.jpg";
 import feature4 from "../assets/images/feature4.jpg";
+import crecimientopersonal from "../assets/images/crecimientopersonal.png";
+import habilidadespracticas from "../assets/images/habilidadespracticas.png";
+import oportunidadeslaborales from "../assets/images/oportunidadeslaborales.png";
+import areasconocimiento from "../assets/images/areasconocimiento.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Motivos = () => {
@@ -53,36 +57,36 @@ export const Motivos = () => {
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
               <div className="mb-4 py-3 pl-3 pr-2 rounded">
                 <img
-                  src={feature1.src}
-                  alt="Feature image 1"
+                  src={crecimientopersonal.src}
+                  alt="Crecimiento personal"
                   className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
-                  aria-label="Feature image 1"
+                  aria-label="Crecimiento personal"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
-                  src={feature2.src}
-                  alt="Feature image 2"
+                  src={habilidadespracticas.src}
+                  alt="Habilidades practicas"
                   className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
-                  aria-label="Feature image 2"
+                  aria-label="Habilidades practicas"
                 />
               </div>
             </div>
             <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
               <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature3.src}
-                  alt="Feature image 3"
+                  src={oportunidadeslaborales.src}
+                  alt="Oportunidades laborales"
                   className="rounded-xl  main-border-gray"
-                  aria-label="Feature image 3"
+                  aria-label="Oportunidades laborales"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature4.src}
-                  alt="Feature image 4"
+                  src={areasconocimiento.src}
+                  alt="Areas conocimiento"
                   className="rounded-xl  main-border-gray"
-                  aria-label="Feature image 4"
+                  aria-label="Areas conocimiento"
                 />
               </div>
             </div>

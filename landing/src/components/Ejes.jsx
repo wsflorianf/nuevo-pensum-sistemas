@@ -3,10 +3,10 @@ import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
 
-
-export const FeaturesDiagonal = () => {
+export const Ejes = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [materias, setMaterias] = useState([]);
+  const [enfoque, setEnfoque] = useState("");
 
   // Datos de las materias para cada enfoque
   const materiasPorEnfoque = {
@@ -66,7 +66,7 @@ export const FeaturesDiagonal = () => {
       "Gestión de la Innovación en TI",
       "Gestión de la Calidad en Proyectos TI",
     ],
-    "Cibernética e Inteligencia Artificial (Ciencia de Sistemas)": [
+    "Cibernética e Inteligencia Artificial": [
       "Inteligencia Artificial I",
       "Inteligencia Artificial II",
       "Cibernética I",
@@ -87,13 +87,13 @@ export const FeaturesDiagonal = () => {
   };
 
   const handleButtonClick = (enfoque) => {
-    console.log(isModalOpen, "JASKDJALKSD NMMS", enfoque);
     setIsModalOpen((prev) => {
       console.log(prev);
       return prev;
     });
     setIsModalOpen(true);
     setMaterias(materiasPorEnfoque[enfoque]);
+    setEnfoque(enfoque);
   };
 
   return (
@@ -174,16 +174,16 @@ export const FeaturesDiagonal = () => {
                 aria-label="Live demo"
                 onClick={() =>
                   handleButtonClick(
-                    "Cibernética e Inteligencia Artificial (Ciencia de Sistemas)"
+                    "Cibernética e Inteligencia Artificial"
                   )
                 }
               >
-                Cibernética e Inteligencia Artificial (Ciencia de Sistemas)
+                Cibernética e Inteligencia Artificial
               </button>
             </div>
 
             {isModalOpen && (
-              <InvitationModal setIsOpen={setIsModalOpen} materias={materias} />
+              <InvitationModal setIsOpen={setIsModalOpen} materias={materias} enfoque={enfoque} />
             )}
           </div>
         </div>
