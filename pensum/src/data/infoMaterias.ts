@@ -12,7 +12,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -23,7 +23,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -34,7 +34,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -45,7 +45,7 @@ const infoMaterias: NivelType[] = [
         tc: 4,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -56,7 +56,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -67,7 +67,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 1,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -78,7 +78,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 1,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -94,7 +94,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -105,7 +105,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -116,7 +116,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -127,7 +127,7 @@ const infoMaterias: NivelType[] = [
         tc: 4,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -138,7 +138,7 @@ const infoMaterias: NivelType[] = [
         tc: 1,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -160,7 +160,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 1,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -176,7 +176,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -187,7 +187,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -198,7 +198,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -209,7 +209,7 @@ const infoMaterias: NivelType[] = [
         tc: 4,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -220,7 +220,7 @@ const infoMaterias: NivelType[] = [
         tc: 1,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -240,7 +240,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 1,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -256,7 +256,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CB',
       },
       {
@@ -267,7 +267,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -278,7 +278,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -289,7 +289,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -300,7 +300,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -320,7 +320,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -336,7 +336,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -347,7 +347,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -358,7 +358,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -369,7 +369,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -380,7 +380,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 3,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -391,7 +391,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
     ],
@@ -407,7 +407,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 5,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -454,7 +454,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -497,7 +497,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 5,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -508,7 +508,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'BI',
       },
       {
@@ -519,7 +519,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
     ],
@@ -573,7 +573,7 @@ const infoMaterias: NivelType[] = [
         tc: 0,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
       {
@@ -627,7 +627,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 2,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'CO',
       },
       {
