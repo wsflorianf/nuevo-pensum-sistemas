@@ -562,7 +562,7 @@ const infoMaterias: NivelType[] = [
         tc: 2,
         ta: 1,
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          'https://pi.udistrital.edu.co/Unidad-Ingenieria/investigacion?proyecto=2',
         tipo: 'CO',
       },
       {
