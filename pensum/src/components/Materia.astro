@@ -9,7 +9,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <a
   class='materia'
-  href={tipo==='AI'?`opcion/${codigo}`:urlSyllabus}
+  href={tipo==='AI'?`electiva/${codigo}`:urlSyllabus}
   data-name={nombre}
   data-type={tipo}
   data-code={codigo}
