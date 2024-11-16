@@ -13,9 +13,10 @@ export function getStaticPaths() {
   })
 }
 
+//Se obtiene el código de la materia
 const { codigo } = Astro.params
 
-
+//Se busca la materia con sus respectivas electivas
 const materia = obtenerMateria(codigo||'')
 
 ---
@@ -40,7 +41,6 @@ const materia = obtenerMateria(codigo||'')
     <ModalPDF/>
 </div>
 </Layout>
-
 
 <style>
 
