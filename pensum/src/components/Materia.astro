@@ -9,12 +9,11 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <a
   class='materia'
-  href={tipo==='AI'?`electiva/${codigo}`:urlSyllabus}
+  href={tipo === 'AI' ? `electiva/${codigo}` : urlSyllabus}
   data-name={nombre}
   data-type={tipo}
   data-code={codigo}
   data-tipo={tipo}
-  onclick={tipo === 'AI' ? '' : 'event.preventDefault()'}
 >
   <div class='cod'><span>Código: </span>{codigo}</div>
 
@@ -35,60 +34,69 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 </a>
 
 <script>
-  function isMobile() {
-    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-      navigator.userAgent
-    )
-  }
+  //Se envuelve el script en un eventListener de Astro para evitar la perdida de acción por las transiciones
+  document.addEventListener('astro:page-load', () => {
 
-  //Se seleccionan todas las materias para asignarles el evento necesario según corresponda el tipo (EX, AI o el resto)
-  document.querySelectorAll('.materia').forEach((materia) => {
-    //Se obtiene el tipo del atributo data-type
-    let tipo = materia.getAttribute('data-type')
-
-    //Se previene dar comportamiento si existe alguna materia sin tipo
-    if (!tipo || tipo == 'AI') {
+    //Función para saber si el usuario está en un navegador móvil.
+    function isMobile() {
+      return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+        navigator.userAgent
+      )
     }
-    //Si es EX no se le asigna eventListener
-    else if (tipo == 'EX') {
-      materia.addEventListener('click', () => {
-        alert("¡Puedes inscribir materias extrínsecas de cualquier proyecto curricular!")
-      })
-    }
-    //Para las demás se muestra una ventana modal con su syllabus
-    else {
-      //Si está en modo movil se quita el atributo onlcick de todas las materias para que el elemnto "a" actúe normal
 
-      if (isMobile()) {
-        materia.removeAttribute('onclick')
-      } else {
-        materia.addEventListener('click', () => {
-          let url = materia.getAttribute('href') || ''
+    //Se seleccionan todas las materias para asignarles el evento necesario según corresponda el tipo (EX, AI o el resto)
+    document.querySelectorAll('.materia').forEach((materia) => {
+      //Se obtiene el tipo del atributo data-type
+      let tipo = materia.getAttribute('data-type')
 
-          //Se lleva hacia la parte superior del sitio
-          scrollTo({ top: 0 })
-
-          //Se quita temporalmente el scroll al sitio
-          document.body.style.overflow = 'hidden'
-
-          const pdfView = document.querySelector('#modal-pdf')
-          const iframe = document.createElement('iframe')
-
-          let titulo = pdfView?.querySelector('h2')
-
-          if (titulo) {
-            titulo.innerText = materia.getAttribute('data-name') || ''
-          }
-
-          //Se establece el modal como abierto
-          pdfView?.setAttribute('data-mode', 'open')
-
-          //Se agrega el iframe para visualizar el PDF con su respectiva url, la url se obtiene del atributo data-url de la materia
-          iframe.src = url
-          pdfView?.appendChild(iframe)
+      //Se previene dar comportamiento si existe alguna materia sin tipo o si es AI (se deja el anchor por defecto)
+      if (!tipo || tipo == 'AI') {
+      }
+      //Si es EX no se le asigna eventListener
+      else if (tipo == 'EX') {
+        materia.addEventListener('click', (event) => {
+          event.preventDefault()
+          alert(
+            '¡Puedes inscribir materias extrínsecas de cualquier proyecto curricular!'
+          )
         })
       }
-    }
+      //Para las demás se muestra una ventana modal con su syllabus
+      else {
+        
+        //Se da comportamiento para mostrar la ventana modal si no está en un dispositivo móvil
+        if (!isMobile()) {
+          materia.addEventListener('click', (event) => {
+            event.preventDefault()
+
+            //Se obtiene la url del PDF
+            let url = materia.getAttribute('href') || ''
+
+            //Se lleva hacia la parte superior del sitio
+            scrollTo({ top: 0 })
+
+            //Se quita temporalmente el scroll al sitio
+            document.body.style.overflow = 'hidden'
+
+            const pdfView = document.querySelector('#modal-pdf')
+            const iframe = document.createElement('iframe')
+
+            let titulo = pdfView?.querySelector('h2')
+            //Se le pone el título de la materia a la ventana modal 
+            if (titulo) {
+              titulo.innerText = materia.getAttribute('data-name') || ''
+            }
+
+            //Se establece el modal como abierto
+            pdfView?.setAttribute('data-mode', 'open')
+
+            //Se agrega el iframe para visualizar el PDF con su respectiva url
+            iframe.src = url
+            pdfView?.appendChild(iframe)
+          })
+        }
+      }
+    })
   })
 </script>
 
@@ -107,7 +115,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     width: auto;
   }
 
-  div{
+  div {
     background-color: #fff;
   }
 
@@ -131,10 +139,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   }
 
   .materia:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-      box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
-    }
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
+  }
 
   .nombre {
     display: grid;
@@ -168,14 +176,15 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     background-color: #a4d175;
   }
 
-  .AI, .OPCION {
+  .AI,
+  .OPCION {
     background-color: #b77ecb;
   }
 
   .EX {
     background-color: #ffac52;
   }
-  
+
   @media screen and (max-width: 1300px) {
     .materia {
       height: 120px;
@@ -189,5 +198,4 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
       padding: 1px;
     }
   }
-
 </style>
