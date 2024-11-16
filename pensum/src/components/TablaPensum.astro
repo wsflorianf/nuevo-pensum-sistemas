@@ -15,12 +15,12 @@ let datosTotales: {
 niveles.forEach((nivel) => {
   let suma = nivel.materias.reduce(
     (totalMaterias, materia) => {
-      if (materia.ta && materia.tc && materia.td && materia.creditos) {
-        totalMaterias.tdTotal += materia.td
-        totalMaterias.tcTotal += materia.tc
-        totalMaterias.taTotal += materia.ta
-        totalMaterias.creditosTotal += materia.creditos
-      }
+      console.log(materia.nombre, materia.ta, materia.tc, materia.td, materia.creditos)
+      
+        totalMaterias.tdTotal += materia.td!==undefined?materia.td:0
+        totalMaterias.tcTotal += materia.tc!==undefined?materia.tc:0
+        totalMaterias.taTotal += materia.ta!==undefined?materia.ta:0
+        totalMaterias.creditosTotal += materia.creditos!==undefined?materia.creditos:0
 
       return totalMaterias
     },
