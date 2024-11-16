@@ -35,10 +35,10 @@ const BarraMateriasReact = () => {
 
   // Lista de categorías con tipos y nombres, que representa cada filtro
   const categorias = [
-    { tipo: 'CO', nombre: 'Complementario' },
     { tipo: 'CB', nombre: 'Ciencias Básicas' },
     { tipo: 'BI', nombre: 'Básicas de Ingeniería' },
     { tipo: 'AI', nombre: 'Aplicadas de Ingeniería' },
+    { tipo: 'CO', nombre: 'Complementario' },
     { tipo: 'EX', nombre: 'Extrínsecas' }
   ];
 

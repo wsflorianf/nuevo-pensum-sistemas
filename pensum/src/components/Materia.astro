@@ -9,7 +9,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 
 <a
   class='materia'
-  href={urlSyllabus}
+  href={tipo==='AI'?`opcion/${codigo}`:urlSyllabus}
   data-name={nombre}
   data-type={tipo}
   data-code={codigo}
@@ -29,7 +29,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     <div class='colaborativo'><span>TC: </span>{tc}</div>
     <div class='autonomo'><span>TA: </span>{ta}</div>
   </div>
-  <div class={'nombre ' + tipo}>
+  <div transition:name={nombre} class={'nombre ' + tipo}>
     {nombre}
   </div>
 </a>
@@ -47,20 +47,12 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     let tipo = materia.getAttribute('data-type')
 
     //Se previene dar comportamiento si existe alguna materia sin tipo
-    if (!tipo) {
+    if (!tipo || tipo == 'AI') {
     }
     //Si es EX no se le asigna eventListener
     else if (tipo == 'EX') {
       materia.addEventListener('click', () => {
         alert("¡Puedes inscribir materias extrínsecas de cualquier proyecto curricular!")
-      })
-    }
-    //Para AI se redirige hacia las opciones posibles para este espacio
-    else if (tipo == 'AI') {
-      materia.addEventListener('click', () => {
-        let url = materia.getAttribute('data-url') || ''
-
-        window.location.replace(url)
       })
     }
     //Para las demás se muestra una ventana modal con su syllabus
@@ -165,26 +157,25 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   }
 
   .CO {
-    background-color: #00b0f0;
+    background-color: #ff7a7a;
   }
 
   .CB {
-    background-color: #ffff00;
+    background-color: #81f0fa;
   }
 
   .BI {
-    background-color: #93d150;
+    background-color: #a4d175;
   }
 
-  .AI {
-    background-color: #bfbfbf;
+  .AI, .OPCION {
+    background-color: #b77ecb;
   }
 
   .EX {
-    background-color: #fcd5b4;
+    background-color: #ffac52;
   }
-
-
+  
   @media screen and (max-width: 1300px) {
     .materia {
       height: 120px;

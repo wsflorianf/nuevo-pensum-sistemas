@@ -34,11 +34,25 @@
   }
 
   /* Colores de fondo específicos para cada categoría */
-  .CO { background-color: #00b0f0; }
-  .CB { background-color: #ffff00; }
-  .BI { background-color: #93d150; }
-  .AI { background-color: #bfbfbf; }
-  .EX { background-color: #fcd5b4; }
+  .CO {
+    background-color: #ff7a7a;
+  }
+
+  .CB {
+    background-color: #81f0fa;
+  }
+
+  .BI {
+    background-color: #a4d175;
+  }
+
+  .AI, .OPCION {
+    background-color: #b77ecb;
+  }
+
+  .EX {
+    background-color: #ffac52;
+  }
 
   @media screen and (max-width: 840px) {
     .categoria{
