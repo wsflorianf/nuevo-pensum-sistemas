@@ -11,6 +11,8 @@ let datosTotales: {
   creditosTotal: number
 }[] = []
 
+let creditosTotales = 0;
+
 // Se itera cada nivel y se guardan en un objeto "totalMaterias" la suma de los datos todas las materias de ese nivel
 niveles.forEach((nivel) => {
   let suma = nivel.materias.reduce(
@@ -20,7 +22,9 @@ niveles.forEach((nivel) => {
         totalMaterias.tdTotal += materia.td!==undefined?materia.td:0
         totalMaterias.tcTotal += materia.tc!==undefined?materia.tc:0
         totalMaterias.taTotal += materia.ta!==undefined?materia.ta:0
+        
         totalMaterias.creditosTotal += materia.creditos!==undefined?materia.creditos:0
+        creditosTotales+=materia.creditos!==undefined?materia.creditos:0
 
       return totalMaterias
     },
@@ -72,6 +76,7 @@ niveles.forEach((nivel) => {
     })
   }
 </div>
+<p>Total de Créditos: {creditosTotales}</p>
 
 <style>
   h2 {
@@ -106,7 +111,7 @@ niveles.forEach((nivel) => {
     border-collapse: collapse;
     width: 100%;
     margin-top: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8em;
     background-color: #fff;
   }
 
@@ -123,10 +128,29 @@ niveles.forEach((nivel) => {
     background-color: #ddd;
   }
 
-  @media screen and (max-width: 1300px) {
+  p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    border: 3px black solid;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1270px) {
     #pensum {
       grid-auto-flow: row;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    p{
+      font-size: 1.5em;
+      margin: 50px auto;
     }
   }
 
@@ -147,6 +171,10 @@ niveles.forEach((nivel) => {
       width: 50%;
       place-self: center;
       grid-column: span 2;
+    }
+
+    p{
+      font-size: 1.3em;
     }
   }
 </style>
