@@ -12,25 +12,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -46,25 +46,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -80,25 +80,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -114,25 +114,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -148,25 +148,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -182,25 +182,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -216,25 +216,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -250,25 +250,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -284,25 +284,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -318,25 +318,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -353,25 +353,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
@@ -387,25 +387,25 @@ const infoElectivas: MateriaType[] = [
       {
         nombre: 'CURSO 1',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 2',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 3',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
       {
         nombre: 'CURSO 4',
         urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
+          '',
         tipo: 'OPCION',
       },
     ],
