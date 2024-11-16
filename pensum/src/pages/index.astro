@@ -22,6 +22,12 @@ import ModalPDF from '@/components/ModalPDF.astro'
   <!-- wf -->
 </Layout>
 
+<script>
+  window.onbeforeprint = ()=>{
+    alert("Recomendamos usar una escala personalizada de 55 en los ajustes de impresión para imprimir el pensum en papel común.")
+  }
+</script>
+
 <style>
   h1 {
     text-align: center;
