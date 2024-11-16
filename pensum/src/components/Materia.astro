@@ -36,7 +36,6 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
 <script>
   //Se envuelve el script en un eventListener de Astro para evitar la perdida de acción por las transiciones
   document.addEventListener('astro:page-load', () => {
-
     //Función para saber si el usuario está en un navegador móvil.
     function isMobile() {
       return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
@@ -63,7 +62,6 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
       }
       //Para las demás se muestra una ventana modal con su syllabus
       else {
-        
         //Se da comportamiento para mostrar la ventana modal si no está en un dispositivo móvil
         if (!isMobile()) {
           materia.addEventListener('click', (event) => {
@@ -79,20 +77,33 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
             document.body.style.overflow = 'hidden'
 
             const pdfView = document.querySelector('#modal-pdf')
-            const iframe = document.createElement('iframe')
 
             let titulo = pdfView?.querySelector('h2')
-            //Se le pone el título de la materia a la ventana modal 
+            //Se le pone el título de la materia a la ventana modal
             if (titulo) {
               titulo.innerText = materia.getAttribute('data-name') || ''
             }
 
+            let visualizador: HTMLImageElement | HTMLIFrameElement
+
+            //Si hay url de PDF se crea un iframe y se agrega a la modal
+            if (url!=='') {
+              visualizador = document.createElement('iframe')
+              visualizador.src = url
+            } 
+
+            //Si no se crea un img y se agrega a la modal
+            else {
+              visualizador = document.createElement('img')
+              visualizador.src = '/images/construccion.png'
+            }
+
+            visualizador.id = 'visualizador'
+
+            pdfView?.appendChild(visualizador)
+
             //Se establece el modal como abierto
             pdfView?.setAttribute('data-mode', 'open')
-
-            //Se agrega el iframe para visualizar el PDF con su respectiva url
-            iframe.src = url
-            pdfView?.appendChild(iframe)
           })
         }
       }

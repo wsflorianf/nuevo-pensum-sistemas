@@ -36,11 +36,11 @@
       //Se establece en cerrada la ventana
       pdfView?.setAttribute('data-mode', 'close')
 
-      const iframe = pdfView?.querySelector('iframe')
+      const visualizador = pdfView?.lastChild
       
-      //Se remueve el iframe del modal
-      if (iframe) {
-        pdfView?.removeChild(iframe)
+      //Se remueve el elemento cargado del modal
+      if (visualizador) {
+        pdfView?.removeChild(visualizador)
       }
     })
   })
@@ -87,15 +87,31 @@
     transform: scale(1.05);
     box-shadow: 0 0 8px 0.5px rgb(0, 0, 0, 0.5);
   }
+
+  img{
+  
+  }
 </style>
 
 <style is:global>
-  iframe {
+
+  iframe[id=visualizador]{
     width: 100%;
-    height: 100%;
+    height: 90%;
     bottom: 10px;
     left: 10px;
     right: 10px;
     margin: auto;
   }
+
+  img[id=visualizador]{
+    height: 70%;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+
 </style>
