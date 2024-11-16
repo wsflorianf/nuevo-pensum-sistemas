@@ -230,8 +230,6 @@ const infoMaterias: NivelType[] = [
         td: 2,
         tc: 0,
         ta: 1,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'EX',
       },
       {
@@ -312,8 +310,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 0,
         ta: 2,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'EX',
       },
       {
@@ -421,8 +417,6 @@ const infoMaterias: NivelType[] = [
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -432,8 +426,6 @@ const infoMaterias: NivelType[] = [
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -443,8 +435,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -454,8 +444,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 0,
         ta: 2,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'EX',
       },
       {
@@ -481,8 +469,6 @@ const infoMaterias: NivelType[] = [
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -492,8 +478,6 @@ const infoMaterias: NivelType[] = [
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -503,8 +487,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -552,8 +534,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -563,8 +543,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -574,8 +552,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -623,11 +599,8 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
-      // {nombre: "", tipo: "", urlSyllabus: ""},
       {
         codigo: '52',
         nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
@@ -635,8 +608,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
@@ -646,8 +617,6 @@ const infoMaterias: NivelType[] = [
         td: 4,
         tc: 2,
         ta: 6,
-        urlSyllabus:
-          'http://accioneduca.org/admin/archivos/modulos/ayudanos/prueba.pdf',
         tipo: 'AI',
       },
       {
