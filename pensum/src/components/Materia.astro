@@ -4,7 +4,7 @@ import { type MateriaType } from '@/types/informacion'
 interface Props extends MateriaType {}
 
 //Props del componente
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.props
 ---
 
 <a
@@ -30,6 +30,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
   </div>
   <div transition:name={nombre} class={'nombre ' + tipo}>
     {nombre}
+    <span>{info}</span>
   </div>
 </a>
 
@@ -161,6 +162,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo } = Astro.props
     font-weight: 600;
     padding: 2px;
     justify-self: center;
+  }
+
+  .nombre span{
+    font-size: 0.9em;
   }
 
   .horas {
