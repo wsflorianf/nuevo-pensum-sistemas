@@ -1,14 +1,13 @@
 ---
 import Materia from '@/components/Materia.astro'
 import ModalPDF from '@/components/ModalPDF.astro'
-import infoElectivas from '@/data/infoElectivas'
 import Layout from '@/layouts/Layout.astro'
-import {obtenerMateria} from '@/services/materias'
+import {obtenerMateria, obtenerMaterias} from '@/services/materiasElectivas'
 import { type MateriaType } from '@/types/informacion'
 
 //Se generan las rutas con el codigo de cada espacio que tenga opciones
 export function getStaticPaths() {
-  return infoElectivas.map((electiva)=>{
+  return obtenerMaterias().map((electiva)=>{
     return {params: {codigo: electiva.codigo}}
   })
 }
@@ -68,6 +67,7 @@ const materia = obtenerMateria(codigo||'')
         color: #fff;
         font-weight: 600;
         background-color: #333;
+        margin: 20px 0;
         text-transform: uppercase;
         padding: 7px 14px;
         border-radius: 4px;
@@ -81,9 +81,15 @@ const materia = obtenerMateria(codigo||'')
     }
 
     @media screen and (max-width: 1200px){
+
+        h1{
+            font-size: 1.5em;
+        }
+
         #opciones{
             flex-direction: column;
-            gap: 40px;
+            padding: 20px 40px;
+            gap: 30px;
         }
     }
 
