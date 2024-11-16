@@ -28,11 +28,17 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <img id="fondo" src="/images/logo.svg" alt="">
+    <h1 transition:name="titulo-universidad">
+      Universidad Distrital Francisco José de Caldas
+      <br>
+      <span>Plan de Estudios - Ingeniería de Sistemas</span>
+    </h1>
+    <img transition:name="imagen-fondo" id="fondo" src="/images/logo.svg" alt="">
     <slot />
     <!-- wf -->
   </body>
 </html>
+
 <style is:global>
   * {
     box-sizing: border-box;
@@ -63,5 +69,27 @@ const { title } = Astro.props
     body {
       padding: 5px;
     }
+  }
+</style>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  
+  h1 span {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    h1{
+      font-size: 1.4em;
+    }
+
+    h1 span{
+      font-size: 0.75em;
+    }
+    
   }
 </style>
