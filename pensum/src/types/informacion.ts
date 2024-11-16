@@ -7,6 +7,7 @@ export interface MateriaType {
     codigo?: string;        // Código de la Materia
     nombre: string;        // Nombre Completo
     creditos?: number;      // Número de Créditos
+    info?: string;          // Información del espacio
     td?: number;            // Horas Trabajo Directo
     tc?: number;            // Horas Trabajo Colaborativo
     ta?: number;            // Horas Trabajo Autónomo

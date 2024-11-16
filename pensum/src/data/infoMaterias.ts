@@ -226,6 +226,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: '20',
         nombre: 'EXTRÍNSECA I',
+        info: '(Cine, Tecnología y Sociedad / Fotografía / Realización Audiovis.)',
         creditos: 1,
         td: 2,
         tc: 0,
@@ -306,6 +307,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: '27',
         nombre: 'EXTRÍNSECA II',
+        info: '(Literatura, Lenguas e ingeniería / Música, Tecnología y Sociedad)',
         creditos: 2,
         td: 4,
         tc: 0,
@@ -440,6 +442,7 @@ const infoMaterias: NivelType[] = [
       {
         codigo: '39',
         nombre: 'EXTRÍNSECA III',
+        info: '(Humanidades y Mundos Digitales / Composición Fotog. / Expres. Musical Sec.)',
         creditos: 2,
         td: 4,
         tc: 0,
