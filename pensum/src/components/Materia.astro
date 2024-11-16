@@ -4,7 +4,8 @@ import { type MateriaType } from '@/types/informacion'
 interface Props extends MateriaType {}
 
 //Props del componente
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.props
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
+  Astro.props
 ---
 
 <a
@@ -64,12 +65,13 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.
       //Para las demás se muestra una ventana modal con su syllabus
       else {
         //Se da comportamiento para mostrar la ventana modal si no está en un dispositivo móvil
+
+        //Se obtiene la url del PDF
+        let url = materia.getAttribute('href') || ''
+
         if (!isMobile()) {
           materia.addEventListener('click', (event) => {
             event.preventDefault()
-
-            //Se obtiene la url del PDF
-            let url = materia.getAttribute('href') || ''
 
             //Se lleva hacia la parte superior del sitio
             scrollTo({ top: 0 })
@@ -88,10 +90,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.
             let visualizador: HTMLImageElement | HTMLIFrameElement
 
             //Si hay url de PDF se crea un iframe y se agrega a la modal
-            if (url!=='') {
+            if (url !== '') {
               visualizador = document.createElement('iframe')
               visualizador.src = url
-            } 
+            }
 
             //Si no se crea un img y se agrega a la modal
             else {
@@ -106,6 +108,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.
             //Se establece el modal como abierto
             pdfView?.setAttribute('data-mode', 'open')
           })
+        } else {
+          if (url=='') {
+            materia.setAttribute('href', '/images/construccion.png')
+          }
         }
       }
     })
@@ -164,7 +170,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } = Astro.
     justify-self: center;
   }
 
-  .nombre span{
+  .nombre span {
     font-size: 0.9em;
   }
 
