@@ -149,7 +149,7 @@ const infoMaterias: NivelType[] = [
         tc: 1,
         ta: 2,
         urlSyllabus:
-          'https://herramientas.datos.gov.co/sites/default/files/2021-08/Pruebas_3.pdf',
+          '',
         tipo: 'CO',
       },
       {
