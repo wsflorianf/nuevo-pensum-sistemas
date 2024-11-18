@@ -24,9 +24,10 @@ const BarraMateriasReact = () => {
       if (filtroActivo === tipo) {
         // Si el filtro se deselecciona, todas las materias son visibles (opacidad 1)
         materia.style.opacity = '1';
+        materia.removeAttribute("style");
       } else {
         // Si hay un filtro activo, se ajusta la opacidad según si la materia corresponde al tipo seleccionado
-        materia.style.opacity = tipoMateria === tipo ? '1' : '0.3';
+        materia.setAttribute("style", tipoMateria === tipo ? "":"pointer-events: none; opacity: 0.3")
       }
     });
   };
@@ -59,10 +60,10 @@ const BarraMateriasReact = () => {
           display: flex;
           gap: 10px;
           padding: 10px;
-          background-color: #ffffff;
           border-radius: 8px;
           justify-content: center;
           margin-bottom: 20px;
+          flex-wrap: wrap;
         }
 
         .categoria {
@@ -91,6 +92,12 @@ const BarraMateriasReact = () => {
         .BI { background-color: #93d150; }
         .AI { background-color: #bfbfbf; }
         .EX { background-color: #fcd5b4; }
+
+        @media screen and (max-width: 840px) {
+          .categoria{
+              width: 100%;
+          }
+      }
       `}</style>
     </div>
   );
