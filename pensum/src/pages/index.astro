@@ -19,12 +19,18 @@ import ModalPDF from '@/components/ModalPDF.astro'
 <script>
   //Mensaje de recomendación para imprimir el pensum
   window.onbeforeprint = ()=>{
-    alert("Recomendamos usar una escala personalizada de 55 en los ajustes de impresión para imprimir el pensum en papel común.")
+    alert("Recomendamos usar una escala personalizada de 50 en los ajustes de impresión para imprimir el pensum en papel común.")
   }
 </script>
 
 <style>
   a{
     color: #000;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 </style>
