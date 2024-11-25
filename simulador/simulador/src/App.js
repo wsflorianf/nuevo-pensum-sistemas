@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PlanDeEstudios from './PlanDeEstudios';
+import './PlanDeEstudios.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Simulación de cambio de Pensum</h1>
+      <h2>Escoja las materias que ya ha aprobado del pensum anterior haciendo click <br></br>sobre ellas, o haga click sobre el nivel 
+        correspondiente para seleccionar todas <br></br>las materias de ese nivel</h2>
+      <PlanDeEstudios />
     </div>
   );
 }
