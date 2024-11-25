@@ -48,24 +48,30 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-10 sm:mb-10 justify-center">
-            <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
-              aria-label="Live demo"
-            >
-              Antiguo Plan de Estudios
-            </button>
-            <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
-              aria-label="Live demo"
-            >
-              Nuevo Plan de Estudios
-            </button>
-            <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
-              aria-label="Live demo"
-            >
-              Simulador
-            </button>
+            <a href="https://ingenieria.udistrital.edu.co/bannersis/pensum/creditos/index-pensum2.html" target="_blank" rel="noopener noreferrer">
+              <button
+                className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
+                aria-label="Live demo"
+              >
+                Antiguo Plan de Estudios
+              </button>
+            </a>
+            <a href="localhost:4321/pensum" target="_blank" rel="noopener noreferrer">
+              <button
+                className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                aria-label="Live demo"
+              >
+                Nuevo Plan de Estudios
+              </button>
+            </a>
+            <a href="localhost:4321/simulador" target="_blank" rel="noopener noreferrer">
+              <button
+                className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
+                aria-label="Live demo"
+              >
+                Simulador
+              </button>
+            </a>
           </div>
         </motion.div>
         <motion.div
