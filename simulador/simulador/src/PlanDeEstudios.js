@@ -3,14 +3,24 @@ import './PlanDeEstudios.css';
 import { simulacion } from './simulacion';
 
 const Materia = ({ materia, toggleAprobado }) => (
-  <div className={`materia ${materia.estado ? 'aprobada' : ''}`}>
+  <div className={`materia ${materia.estado ? 'aprobada' : ''}${materia.Tipo}`}>
     <input
       type="checkbox"
       checked={materia.estado}
       onChange={() => toggleAprobado(materia.nombre)} // Cambiado a 'materia.nombre'
     />
-    <p><strong>{materia.nombre}</strong></p>
-    <p>Créditos: {materia.creditos}</p>
+    <div class="cod">
+      <span>Código: {materia.cod}</span>
+    </div>
+    <div class="creditos">
+      <span>Créditos: {materia.creditos}</span>
+    </div>
+    <div class="horas">
+      <div><span>TD: {materia.TD}</span></div>
+      <div><span>TC: {materia.TC}</span></div>
+      <div><span>TA: {materia.TA}</span></div>
+    </div>
+    <div class="nombre"><span>{materia.nombre}</span></div>
   </div>
 );
 
