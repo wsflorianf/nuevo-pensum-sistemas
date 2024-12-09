@@ -27,14 +27,15 @@ body {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 45px;
-  color: rgb(246 178 1);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  color: rgb(174 178 183);
+  color: rgb(39, 39, 44);
   text-align: center;
   margin-top: 10px;
 }
@@ -44,11 +45,11 @@ h2 {
 }
 
 #resultados p {
-  color: rgb(174 178 183);
+  color: rgb(31, 31, 32);
 }
 
 #resultados strong {
-  color: #fff;
+  color: #000000;
 }
 
 .nivel-columna {
@@ -170,10 +171,11 @@ h2 {
 .boton {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   text-align: center;
   color: #000;
   letter-spacing: 1px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(126, 206, 90);
   padding: 10px;
   border: #000 2px solid;
   border-radius: 5px;
@@ -218,4 +220,6 @@ h2 {
   .materia, .materia.aprobada{
     width: 150px;
   }
+
+  
 }
