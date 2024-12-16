@@ -4,13 +4,15 @@ import { type MateriaType } from '@/types/informacion'
 interface Props extends MateriaType {}
 
 //Props del componente
-const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
+const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, electiva, id } =
   Astro.props
+
+  const baseURL = import.meta.env.BASE_URL
 ---
 
 <a
-  class='materia'
-  href={tipo === 'AI' ? `electiva/${codigo}` : urlSyllabus}
+  class={tipo==='NA'?'materia NA':'materia'}
+  href={ electiva ? baseURL+'/electivas': tipo === 'AI' ? baseURL+'/'+id:urlSyllabus}
   data-name={nombre}
   data-type={tipo}
   data-code={codigo}
@@ -31,7 +33,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
   </div>
   <div transition:name={nombre} class={'nombre ' + tipo}>
     {nombre}
-    <span>{info}</span>
+    
   </div>
 </a>
 
@@ -87,23 +89,24 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
               titulo.innerText = materia.getAttribute('data-name') || ''
             }
 
-            let visualizador: HTMLImageElement | HTMLIFrameElement
+            //Se obtiene la imagen que existe por defecto en la ventana modal
+            const imagen = document.querySelector('#imagen-construccion')
 
             //Si hay url de PDF se crea un iframe y se agrega a la modal
             if (url !== '') {
-              visualizador = document.createElement('iframe')
+              //Se oculta la imagen
+              imagen?.setAttribute('data-show', '')
+
+              const visualizador = document.createElement('iframe')
               visualizador.src = url
+              visualizador.id = 'visualizador'
+              pdfView?.appendChild(visualizador)
             }
 
-            //Si no se crea un img y se agrega a la modal
+            //Si no, se muestra la imagen que está en el modal
             else {
-              visualizador = document.createElement('img')
-              visualizador.src = '/images/construccion.png'
+              imagen?.setAttribute('data-show', 'show')
             }
-
-            visualizador.id = 'visualizador'
-
-            pdfView?.appendChild(visualizador)
 
             //Se establece el modal como abierto
             pdfView?.setAttribute('data-mode', 'open')
@@ -119,9 +122,7 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
 </script>
 
 <style>
-  .materia {
-    transition: opacity 0.3s ease;
-  }
+  
   a {
     display: block;
     text-decoration: none;
@@ -129,9 +130,15 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
   }
 
   .materia {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    height: 140px;
     border: 1px black solid;
-    width: auto;
+    width: 100%;
     background-color: #fff;
+    transition: opacity 0.3s ease;    
+    transition: 0.2s all;
   }
 
   .materia div {
@@ -142,15 +149,6 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
 
   span {
     font-weight: 500;
-  }
-
-  .materia {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.7rem;
-    height: 140px;
-    width: 100%;
-    transition: 0.2s all;
   }
 
   .materia:hover {
@@ -168,10 +166,6 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
     font-weight: 600;
     padding: 2px;
     justify-self: center;
-  }
-
-  .nombre span {
-    font-size: 0.9em;
   }
 
   .horas {
@@ -196,13 +190,19 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
   }
 
   .AI,
-  .OPCION {
+  .OPCION, .EL {
     background-color: #b77ecb;
   }
 
   .EX {
     background-color: #ffac52;
   }
+
+  .NA{
+    visibility: hidden;
+  }
+
+
 
   @media screen and (max-width: 1300px) {
     .materia {
@@ -215,6 +215,10 @@ const { codigo, nombre, creditos, td, tc, ta, urlSyllabus, tipo, info } =
 
     .nombre {
       padding: 1px;
+    }
+
+    .NA{
+      display: none;
     }
   }
 </style>
