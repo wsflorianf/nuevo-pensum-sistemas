@@ -1,54 +1,92 @@
-# Astro Starter Kit: Basics
+# Proyecto (Nuevo Pensum)
 
-```sh
-npm create astro@latest -- --template basics
+## Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+- Node.js (versión 18 o superior)
+- npm (Node Package Manager)
+
+## Configuración del Proyecto
+
+1. Clonar el Repositorio
+```bash
+git clone https://github.com/wsflorianf/nuevo-pensum-sistemas.git
+cd nuevo-pensum-sistemas
+cd pensum
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+2. Instalar Dependencias
+```bash
+npm install
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Estructura Principal del Proyecto
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```
+├── public/              <- Recursos (Imágenes y Logos)
+├── src/                 <- Carpeta de código fuente
+│   │ 
+│   ├── components/      <- Componentes del proyecto
+│   ├── data/            <- Información de las materias
+│   ├── layouts/         <- Layout principal del Sitio
+│   ├── pages/           <- Páginas del sitio (Rutas estáticas y dinámicas)
+│   ├── services/        <- Servicios para acceder a la información
+│   └── types/           <- Tipado del sitio
+│
+├── astro.config.mjs     <- Configuración del proyecto
+└── package.json         <- Dependencias
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Configuración de la información
 
-## 🧞 Commands
+En la carpeta 'src/data/' se encontraran los archivos:
 
-All commands are run from the root of the project, from a terminal:
+ - infoMaterias.ts
+ - infoObligatorias.ts 
+ - infoElectiva.ts
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Los cuales contienen la información de las materias del pensum (Generales, opciones de las obligatorias y electivas) los cuales al ser modificados se podrá previsualizar en el servidor de desarrollo la nueva versión y posteriormente generar la nueva versión del proyecto para producción.
 
-## 👀 Want to learn more?
+El id de las materias obligatorias deben corresponder y ser el mismo en ambos archivos (infoMaterias.ts, infoObligatorias.ts)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+En la carpeta 'types' se encuentra el fichero 'informacion.ts' dónde se encuentra documentada la forma de la información de los tres archivos anteriores.
+
+## Comandos Disponibles
+Se debe estar ubicado en la carpeta pensum que corresponde al subproyecto del sitio del nuevo pensum. (Las otras carpetas son para los subproyectos de la landing page y el simulador los cuales están en ramas distintas del mismo repositorio).
+
+### Desarrollo
+Para iniciar el servidor de desarrollo con recarga en caliente:
+
+```bash
+npm run dev
+```
+El proyecto estará disponible en `http://localhost:4321`
+
+### Construcción para Producción
+
+#### Configuración
+Ingresar al archivo 'astro.config.mjs en la raíz de la carpeta 'pensum' y establecer la base que concuerde con la subcarpeta en la cual se encontrará dentro del servidor.
+
+Si la ruta del servidor dónde se montará es por ejemplo:
+
+```
+www.sitio.com/sistemas/nuevo/pensum
+```
+
+Se deberá poner en el archivo de configuración la base como 'sistemas/nuevo/pensum'
+
+```
+import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
+
+export default defineConfig({
+    base: "sistemas/nuevo/pensum",
+    integrations: [react()],
+  });
+```
+
+### Generación
+Para generar una versión de producción optimizada:
+```bash
+npm run build
+```
