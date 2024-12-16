@@ -1,0 +1,56 @@
+---
+import ModalPDF from '@/components/ModalPDF.astro'
+import Layout from '@/layouts/Layout.astro'
+import infoElectivas from '@/data/infoElectivas'
+import Materia from '@/components/Materia.astro'
+---
+
+<Layout title='Pensum - Ingeniería de Sistemas'>
+  <h1>Electivas</h1>
+  <main style={`grid-template-columns: repeat(${infoElectivas.length} ,1fr)`}>
+    {
+      infoElectivas.map((nivel) => {
+        return (
+          <div>
+            <h2>{nivel.nombre}</h2>
+            <div id='materias'>
+              {nivel.materias.map((materia) => (
+                <Materia {...materia} />
+              ))}
+            </div>
+          </div>
+        )
+      })
+    }
+  </main>
+  <ModalPDF />
+  <!-- wf -->
+</Layout>
+
+<style>
+  main {
+    display: grid;
+    gap: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  main > div {
+  }
+
+  main div h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+  }
+
+  #materias {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>
