@@ -5,80 +5,84 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 1',
     materias: [
       {
-        codigo: '1',
+        
+        codigo: '',
         nombre: 'CÁLCULO DIFERENCIAL',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '2',
+        
+        codigo: '',
         nombre: 'MATEMÁTICAS DISCRETAS',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '3',
+        
+        codigo: '',
         nombre: 'FÍSICA I',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '4',
+        
+        codigo: '',
         nombre: 'PROGRAMACIÓN BÁSICA',
         creditos: 3,
         td: 2,
         tc: 4,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '5',
+        
+        codigo: '',
         nombre: 'ARQUITECTURA DE COMPUTADORES',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '6',
+        
+        codigo: '',
         nombre: 'SEMINARIO DE INGENIERÍA',
         creditos: 1,
         td: 2,
         tc: 0,
         ta: 1,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '7',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'CÁTEDRA FRANCISCO JOSÉ DE CALDAS',
         creditos: 1,
         td: 2,
         tc: 0,
         ta: 1,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -87,80 +91,88 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 2',
     materias: [
       {
-        codigo: '8',
+        
+        codigo: '',
         nombre: 'CÁLCULO INTEGRAL',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '9',
+        
+        codigo: '',
         nombre: 'ÁLGEBRA LINEAL',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '10',
+        
+        codigo: '',
         nombre: 'FÍSICA II',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '11',
+        
+        codigo: '',
         nombre: 'PROGRAMACIÓN ORIENTADA A OBJETOS',
         creditos: 3,
         td: 2,
         tc: 4,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '12',
+        
+        codigo: '',
         nombre: 'TEORÍA DE SISTEMAS',
         creditos: 2,
         td: 3,
         tc: 1,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '13',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'HISTORIA Y CULTURA COLOMBIANA',
         creditos: 2,
         td: 3,
         tc: 1,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
       {
-        codigo: '14',
+        
+        codigo: '',
         nombre: 'CÁTEDRA DEMOCRACIA Y CIUDADANÍA',
         creditos: 1,
         td: 2,
         tc: 0,
         ta: 1,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -169,64 +181,68 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 3',
     materias: [
       {
-        codigo: '15',
+        
+        codigo: '',
         nombre: 'CÁLCULO MULTIVARIADO',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '16',
+        
+        codigo: '',
         nombre: 'PROBABILIDAD Y ESTADÍSTICA',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '17',
+        
+        codigo: '',
         nombre: 'CIENCIAS DE LA COMPUTACIÓN I',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '18',
+        
+        codigo: '',
         nombre: 'PROGRAMACIÓN AVANZADA',
         creditos: 3,
         td: 2,
         tc: 4,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '19',
+        
+        codigo: '',
         nombre: 'ANÁLISIS Y DISEÑO DE SISTEMAS',
         creditos: 2,
         td: 3,
         tc: 1,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '20',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'EXTRÍNSECA I',
-        info: '(Cine, Tecnología y Sociedad / Fotografía / Realización Audiovis.)',
         creditos: 1,
         td: 2,
         tc: 0,
@@ -234,14 +250,14 @@ const infoMaterias: NivelType[] = [
         tipo: 'EX',
       },
       {
-        codigo: '21',
+        
+        codigo: '',
         nombre: 'GRUPO DE TRABAJO',
         creditos: 1,
         td: 0,
         tc: 2,
         ta: 1,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -250,64 +266,68 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 4',
     materias: [
       {
-        codigo: '22',
+        
+        codigo: '',
         nombre: 'ECUACIONES DIFERENCIALES',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CB',
       },
       {
-        codigo: '23',
+        
+        codigo: '',
         nombre: 'MÉTODOS NÚMERICOS',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '24',
+        
+        codigo: '',
         nombre: 'CIENCIAS DE LA COMPUTACIÓN II',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '25',
+        
+        codigo: '',
         nombre: 'MODELOS DE PROGRAMACIÓN',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '26',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'INVESTIGACIÓN DE OPERACIONES I',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '27',
+        
+        codigo: '',
         nombre: 'EXTRÍNSECA II',
-        info: '(Literatura, Lenguas e ingeniería / Música, Tecnología y Sociedad)',
         creditos: 2,
         td: 4,
         tc: 0,
@@ -315,14 +335,14 @@ const infoMaterias: NivelType[] = [
         tipo: 'EX',
       },
       {
-        codigo: '28',
+        
+        codigo: '',
         nombre: 'ECONOMÍA',
         creditos: 2,
         td: 4,
         tc: 0,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -331,69 +351,69 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 5',
     materias: [
       {
-        codigo: '29',
+        
+        codigo: '',
         nombre: 'MATEMÁTICAS ESPECIALES',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '30',
+        
+        codigo: '',
         nombre: 'FUNDAMENTOS DE INGENIERÍA DE SOFTWARE',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '31',
+        
+        codigo: '',
         nombre: 'FUNDAMENTOS DE REDES DE COMUNICACIONES',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '32',
+        
+        codigo: '',
         nombre: 'BASES DE DATOS',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '33',
+        
+        codigo: '',
         nombre: 'FUNDAMENTOS DE CIENCIA DE SISTEMAS',
         creditos: 3,
         td: 4,
         tc: 2,
         ta: 3,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '34',
-        nombre: 'INVESTICACIÓN DE OPERACIONES II',
+        
+        codigo: '',
+        nombre: 'INVESTIGACIÓN DE OPERACIONES II',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
     ],
@@ -402,18 +422,19 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 6',
     materias: [
       {
-        codigo: '35',
+        
+        codigo: '',
         nombre: 'PROCESOS ESTOCÁSTICOS',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '36',
+        id: 1,
+        codigo: '',
         nombre: 'CURSO OBLIGATORIO I RF',
         creditos: 3,
         td: 2,
@@ -422,7 +443,8 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: '37',
+        id: 2,
+        codigo: '',
         nombre: 'CURSO OBLIGATORIO II RF',
         creditos: 3,
         td: 2,
@@ -431,18 +453,28 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: '38',
-        nombre: 'CURSO ELECTIVO I RF',
+        id: 3,
+        codigo: '',
+        nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
       {
-        codigo: '39',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'EXTRÍNSECA III',
-        info: '(Humanidades y Mundos Digitales / Composición Fotog. / Expres. Musical Sec.)',
         creditos: 2,
         td: 4,
         tc: 0,
@@ -450,14 +482,14 @@ const infoMaterias: NivelType[] = [
         tipo: 'EX',
       },
       {
-        codigo: '40',
+        
+        codigo: '',
         nombre: 'INGENIERÍA ECONÓMICA',
         creditos: 2,
         td: 4,
         tc: 0,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -466,7 +498,12 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 7',
     materias: [
       {
-        codigo: '41',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        id: 4,
+        codigo: '',
         nombre: 'CURSO OBLIGATORIO III RF',
         creditos: 3,
         td: 2,
@@ -475,7 +512,8 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: '42',
+        id: 5,
+        codigo: '',
         nombre: 'CURSO OBLIGATORIO IV RF',
         creditos: 3,
         td: 2,
@@ -484,45 +522,56 @@ const infoMaterias: NivelType[] = [
         tipo: 'AI',
       },
       {
-        codigo: '43',
-        nombre: 'CURSO ELECTIVO II RF',
+        id: 6,
+        codigo: '',
+        nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
+      
       {
-        codigo: '44',
+        
+        codigo: '',
         nombre: 'SISTEMAS OPERATIVOS',
         creditos: 3,
         td: 2,
         tc: 2,
         ta: 5,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '45',
+        
+        codigo: '',
         nombre: 'TEORÍA DE LA INFORMACIÓN',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'BI',
       },
       {
-        codigo: '351',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'METODOLOGÍA DE LA INVESTIGACIÓN',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
     ],
@@ -531,63 +580,83 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 8',
     materias: [
       {
-        codigo: '46',
-        nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
+        nombre: 'CURSO ELECTIVO I RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
       {
-        codigo: '47',
-        nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
+        
+        codigo: '',
+        nombre: 'CURSO ELECTIVO II RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
       {
-        codigo: '48',
-        nombre: 'CURSO ELECTIVO III RF',
+        id: 7,
+        codigo: '',
+        nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
+      },
+      
+      
+      {
+        nombre: '',
+        tipo: 'NA',
       },
       {
-        codigo: '49',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'GRUPO DE INVESTIGACIÓN',
         creditos: 1,
         td: 0,
         tc: 2,
         ta: 1,
-        urlSyllabus:
-          'https://pi.udistrital.edu.co/Unidad-Ingenieria/investigacion?proyecto=2',
+        urlSyllabus: 'https://pi.udistrital.edu.co/Unidad-Ingenieria/investigacion?proyecto=2',
         tipo: 'CO',
       },
       {
-        codigo: '50',
+        
+        codigo: '',
         nombre: 'FORMULACIÓN Y EVALUACIÓN DE PROYECTOS',
         creditos: 2,
         td: 4,
         tc: 0,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
       {
-        codigo: '401',
+        
+        codigo: '',
         nombre: 'TRABAJO DE GRADO I',
         creditos: 1,
         td: 0,
         tc: 0,
         ta: 3,
-        urlSyllabus:
-          'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
+        urlSyllabus: 'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
         tipo: 'BI',
       },
     ],
@@ -596,56 +665,78 @@ const infoMaterias: NivelType[] = [
     nombre: 'Nivel 9',
     materias: [
       {
-        codigo: '51',
-        nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
+        nombre: 'CURSO ELECTIVO III RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
       {
-        codigo: '52',
-        nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
-        creditos: 4,
-        td: 4,
-        tc: 2,
-        ta: 6,
-        tipo: 'AI',
-      },
-      {
-        codigo: '53',
+        
+        codigo: '',
         nombre: 'CURSO ELECTIVO IV RF',
         creditos: 4,
         td: 4,
         tc: 2,
         ta: 6,
         tipo: 'AI',
+        electiva: true,
       },
       {
-        codigo: '54',
+        id: 8,
+        codigo: '',
+        nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        tipo: 'AI',
+        electiva: true,
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        nombre: '',
+        tipo: 'NA',
+      },
+      {
+        
+        codigo: '',
         nombre: 'ÉTICA Y BIOÉTICA',
         creditos: 2,
         td: 2,
         tc: 2,
         ta: 2,
-        urlSyllabus:
-          '',
+        urlSyllabus: '',
         tipo: 'CO',
       },
       {
-        codigo: '55',
+        
+        codigo: '',
         nombre: 'TRABAJO DE GRADO II',
         creditos: 3,
         td: 0,
         tc: 0,
         ta: 9,
-        urlSyllabus:
-          'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
+        urlSyllabus: 'https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf',
         tipo: 'BI',
       },
     ],
   },
-]
+];
 
-export default infoMaterias
+export default infoMaterias;

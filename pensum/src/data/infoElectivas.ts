@@ -1,413 +1,291 @@
-import type { MateriaType } from '@/types/informacion'
+import type { NivelType } from '@/types/informacion'
 
-const infoElectivas: MateriaType[] = [
+let infoElectivas: NivelType[] = [
   {
-    codigo: '36',
-    nombre: 'CURSO OBLIGATORIO I RF',
-    creditos: 3,
-    td: 2,
-    tc: 2,
-    ta: 5,
-    electivas: [
+    nombre: 'Análisis Diseño y Construcción de Software',
+    materias: [
       {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '38',
+        nombre: 'INGENIERÍA WEB',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '38',
+        nombre: 'VERIFICACIÓN DE SOFTWARE',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '38',
+        nombre: 'GESTIÓN Y CONFIGURACIÓN DE SOFTWARE',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '38',
+        nombre: 'COMPUTACIÓN DISTRIBUIDA Y PARALELA',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+      {
+        codigo: '38',
+        nombre: 'DESARROLLO DE SOFTWARE BASADO EN COMPONENTES',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+      {
+        codigo: '38',
+        nombre: 'DESARROLLO DE SW PARA VIDEOJUEGOS',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+
+    ],
+  },
+  {
+    nombre: 'Ingeniería de Datos',
+    materias: [
+      {
+        codigo: '43',
+        nombre: 'BIG DATA',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+      {
+        codigo: '43',
+        nombre: 'GESTIÓN DE DATOS ABIERTOS',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+      {
+        codigo: '43',
+        nombre: 'DATA WAREHOUSE',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
+      },
+      {
+        codigo: '43',
+        nombre: 'HEURÍSTICA PARA EL ANÁLISIS DE DATOS',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
     ],
   },
   {
-    codigo: '37',
-    nombre: 'CURSO OBLIGATORIO II RF',
-    creditos: 3,
-    td: 2,
-    tc: 2,
-    ta: 5,
-    electivas: [
+    nombre: 'Redes de Datos',
+    materias: [
       {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'ARQUITECTURA DE SERVICIOS EN LA NUBE',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'MECANISMOS DE SEGURIDAD INFORMÁTICA',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'TÉCNICAS DE CIFRADO',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '38',
-    nombre: 'CURSO ELECTIVO I RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'SDN SOFTWARE DEFINE NETWORK',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
     ],
   },
   {
-    codigo: '41',
-    nombre: 'CURSO OBLIGATORIO III RF',
-    creditos: 3,
-    td: 2,
-    tc: 2,
-    ta: 5,
-    electivas: [
+    nombre: 'Planeación y Gestión de Proyectos de TI',
+    materias: [
       {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'GESTIÓN DE SERVICIOS DE TI',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'USO Y APROPIACIÓN DE TI',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'CIBERNÉTICA ORGANIZACIONAL',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '42',
-    nombre: 'CURSO OBLIGATORIO IV RF',
-    creditos: 3,
-    td: 2,
-    tc: 2,
-    ta: 5,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'INTERVENTORÍA INFORMÁTICA',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'INGENIERÍA ECONÓMICA PARA SOFTWARE',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'AUDITORÍA INFORMÁTICA',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '43',
-    nombre: 'CURSO ELECTIVO II RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'HERRAMIENTAS DE GESTIÓN DE TI',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
     ],
   },
   {
-    codigo: '46',
-    nombre: 'CURSO ELECTIVO FLEXIBLE I RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
+    nombre: 'Cibernética e Inteligencia Artificial (Ciencia de Sistemas)',
+    materias: [
       {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'EJEMPLO ELECTIVA I',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'EJEMPLO ELECTIVA II',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'EJEMPLO ELECTIVA III',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '47',
-    nombre: 'CURSO ELECTIVO FLEXIBLE II RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'EJEMPLO ELECTIVA IV',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
       {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
+        codigo: '43',
+        nombre: 'EJEMPLO ELECTIVA V',
+        creditos: 4,
+        td: 4,
+        tc: 2,
+        ta: 6,
+        urlSyllabus: '',
+        tipo: 'EL',
       },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '48',
-    nombre: 'CURSO ELECTIVO III RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '51',
-    nombre: 'CURSO ELECTIVO FLEXIBLE III RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  // {nombre: "", tipo: "", urlSyllabus: ""},
-  {
-    codigo: '52',
-    nombre: 'CURSO ELECTIVO FLEXIBLE IV RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-    ],
-  },
-  {
-    codigo: '53',
-    nombre: 'CURSO ELECTIVO IV RF',
-    creditos: 4,
-    td: 4,
-    tc: 2,
-    ta: 6,
-    electivas: [
-      {
-        nombre: 'CURSO 1',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 2',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 3',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
-      {
-        nombre: 'CURSO 4',
-        urlSyllabus:
-          '',
-        tipo: 'OPCION',
-      },
+      
     ],
   },
 ]
