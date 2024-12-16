@@ -2,21 +2,22 @@
 import Materia from '@/components/Materia.astro'
 import ModalPDF from '@/components/ModalPDF.astro'
 import Layout from '@/layouts/Layout.astro'
-import {obtenerMateria, obtenerMaterias} from '@/services/materiasElectivas'
+import {obtenerMateria, obtenerMaterias} from '@/services/materiasObligatorias'
 import { type MateriaType } from '@/types/informacion'
 
 //Se generan las rutas con el codigo de cada espacio que tenga opciones
 export function getStaticPaths() {
   return obtenerMaterias().map((electiva)=>{
-    return {params: {codigo: electiva.codigo}}
+    return {params: {id: electiva.id}}
   })
 }
 
 //Se obtiene el código de la materia
-const { codigo } = Astro.params
+const { id } = Astro.params
 
 //Se busca la materia con sus respectivas electivas
-const materia = obtenerMateria(codigo||'')
+const materia = obtenerMateria(id)
+
 
 ---
 
@@ -25,18 +26,20 @@ const materia = obtenerMateria(codigo||'')
     <h1 transition:name={materia?.nombre}>{materia?.nombre}</h1>
     <div id="opciones">
         {
-            materia?.electivas?.map((electiva=>{
+            materia?.opciones?.map((opcion=>{
 
-                let infoElectiva: MateriaType = {td: materia.td, tc: materia.tc, ta: materia.ta , creditos: materia.creditos, ...electiva}
+                let infoElectiva: MateriaType = {td: materia.td, tc: materia.tc, ta: materia.ta , creditos: materia.creditos, ...opcion}
 
                 return (
+                    <div>
+
+                    <h3>{opcion.ruta}</h3>
                     <Materia  {...infoElectiva}/> 
+                </div>
                 )
             }))
         }
     </div>
-
-    <a href="/">Volver</a>
     <ModalPDF/>
 </div>
 </Layout>
@@ -55,29 +58,24 @@ const materia = obtenerMateria(codigo||'')
     }
 
     #opciones{
-        padding: 50px;
+        padding: 0 30px;
         display: flex;
-        gap: 10%;
-        width: 80%;
+        gap: 30px;
+        width: 90%;
     }
 
-    a{
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
-        background-color: #333;
-        margin: 20px 0;
-        text-transform: uppercase;
-        padding: 7px 14px;
-        border-radius: 4px;
-        transition: 0.2s all;
+    #opciones > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    a:hover{
-        transform: scale(1.05);
-        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
-
+    #opciones > div h3{
+        display: flex;
+        height: 80px;
+        text-align: center;
+        align-items: center;
     }
 
     @media screen and (max-width: 1200px){
