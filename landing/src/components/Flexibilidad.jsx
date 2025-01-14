@@ -15,23 +15,22 @@ export const Flexibilidad = () => {
 
   return (
     <section className="w-screen flex justify-center bg-bgDark2 relative">
-      <div className="absolute -top-16" id="flex" />
-      <div className="pb-20 pt-12 bg-bgDark2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+      <div className="pb-20 pt-12 bg-bgDark2 2xl:w-[1150px] lg:w-[1050px]  md:w-full flex justify-center ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto text-center mb-10">
+          <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center max-w-6xl text-center mb-10">
               <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">
                 La Flexibilidad Del Proyecto
               </h2>
               <h2 className="mt-6 mb-6 text-2xl lg:text-2xl font-bold font-heading text-primaryText">
                 Elige la mejor ruta
               </h2>
-              <p className="mb-6 text-secondaryText">
+              <p className="mb-6 mx-8 text-secondaryText">
                 Comenzando con cursos nivelatorios en producción de texto y
                 precálculo, seguido por una base en ciencias básicas y materias
                 fundamentales de ingeniería. Luego, los estudiantes avanzan a
