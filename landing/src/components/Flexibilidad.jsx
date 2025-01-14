@@ -94,19 +94,19 @@ export const Flexibilidad = () => {
                   <table className="min-w-full bg-bgDark1 border border-gray-700">
                     <thead>
                       <tr>
-                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
+                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white ">
                           Área
                         </th>
-                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
+                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white ">
                           Resolución 053 de 2011
                         </th>
-                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
+                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white ">
                           Créditos
                         </th>
-                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
+                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white ">
                           Plan de Estudios 2023
                         </th>
-                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white">
+                        <th className="py-2 px-4 bg-gray-900 border-b border-gray-700 text-left text-white ">
                           Créditos
                         </th>
                       </tr>
@@ -114,295 +114,295 @@ export const Flexibilidad = () => {
                     <tbody>
                       <tr>
                         <td
-                          className="py-2 px-4 border-b border-gray-700 text-white"
+                          className="py-2 px-4 border-b border-gray-700  "
                           
                         >
                           Complementaria
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Producción y Comprensión de Textos
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Producción y Comprensión de Textos
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           0
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Segundo Idioma
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           6
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Segundo Idioma
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           0
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cátedra Caldas
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cátedra Caldas
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cátedra Democracia y Ciudadanía
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cátedra Democracia y Ciudadanía
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Ética y Bioética
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Ética y Bioética
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Hombre, Sociedad y Ecología
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           1
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white"></td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white"></td>
+                        <td className="py-2 px-4 border-b border-gray-700  "></td>
+                        <td className="py-2 px-4 border-b border-gray-700  "></td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Historia y Cultura Colombiana
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white"></td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white"></td>
+                        <td className="py-2 px-4 border-b border-gray-700  "></td>
+                        <td className="py-2 px-4 border-b border-gray-700  "></td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Ingeniería Económica
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Ingeniería Económica
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Formulación y Evaluación de Proyectos
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Formulación y Evaluación de Proyectos
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Economía
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Economía
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           2
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           Total
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           22
                         </td>
                         <td className="py-2 px-4 border-b border-gray-700"></td>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           10
                         </td>
                       </tr>
 
                       <tr>
                         <td
-                          className="py-2 px-4 border-b border-gray-700 text-white"
+                          className="py-2 px-4 border-b border-gray-700  "
                         >
                           Ciencias Básicas
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Diferencial
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           4
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Precálculo
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           0
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Integral
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Diferencial
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Multivariado
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Integral
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Ecuaciones Diferenciales
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Cálculo Multivariado
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Álgebra Lineal
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Álgebra Lineal
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Probabilidad y Estadística
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Probabilidad y Estadística
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Física Mecánica
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Física Mecánica
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Física Electricidad y Magnetismo
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Física Electricidad y Magnetismo
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Química
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           Química
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 text-white">
+                        <td className="py-2 px-4 border-b border-gray-700  ">
                           3
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           Total
                         </td>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           28
                         </td>
                         <td className="py-2 px-4 border-b border-gray-700"></td>
-                        <td className="py-2 px-4 border-b border-gray-700 font-bold text-white">
+                        <td className="py-2 px-4 border-b border-gray-700 font-bold  ">
                           24
                         </td>
                       </tr>

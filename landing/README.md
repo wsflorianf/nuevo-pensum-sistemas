@@ -1,13 +1,10 @@
-# Tailcast
+# Landing Page New Pensum Systems Engineering
 
-Dark themed website template built on AstroJS, designed for fictional startup
+Dark themed website built on AstroJS, designed to District University.
 
 ## Tech stack:
 
 Astro, React, Tailwind, Framer Motion
-
-## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
 
 ##  Project Structure
 

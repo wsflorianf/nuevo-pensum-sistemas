@@ -4,21 +4,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColor: "rgb(99, 102, 241)",
-        secondaryColor: "rgb(246, 178, 1)",
-        rojoUd: "rgb(237, 27, 35)",
-        primaryText: "rgb(255,255,255)",
-        secondaryText: "rgb(174, 178, 183)",
-        bgDark1: "rgb(31, 32, 35)",
-        bgDark2: "rgb(38, 39, 43)",
-        bgDark3: "rgb(48, 49, 54)",
-        bgDark3Hover: "rgb(55, 56, 62)",
-        bgDarkTransparent: "rgb(31, 32, 35, 0.7)",
-        bgDarkTransparentDarker: "rgb(0,0,0,0.5)",
-        bgDarkTransparentLighter: "rgb(48, 49, 54, 0.7)",
-        mainBorder: "rgb(255,255,255,0.15)",
-        mainBorderDarker: "rgb(255,255,255,0.07)",
-        quoteIconColor: "rgb(178, 184, 205)"
+        primaryColor: "rgb(99, 102, 241)", // Mantén el color primario, ya que es adecuado para un tema claro
+        secondaryColor: "rgb(246, 178, 1)", // Este color también sigue siendo adecuado
+        rojoUd: "rgb(237, 27, 35)", // Mantén este color para énfasis
+        primaryText: "rgb(0, 0, 0)", // Cambiado a negro para un texto más legible en tema claro
+        secondaryText: "rgb(74, 85, 104)", // Gris más suave para el texto secundario
+        bgDark1: "rgb(250, 250, 250)", // Fondo blanco para tema claro
+        bgDark2: "rgb(242, 243, 247)", // Fondo muy claro
+        bgDark3: "rgb(236, 237, 242)", // Fondo más suave
+        bgDark3Hover: "rgb(228, 229, 234)", // Fondo ligeramente oscuro en hover
+        bgDarkTransparent: "rgb(255, 255, 255, 0.7)", // Fondo blanco translúcido
+        bgDarkTransparentDarker: "rgb(0,0,0,0.1)", // Fondo transparente más claro
+        bgDarkTransparentLighter: "rgb(255, 255, 255, 0.9)", // Fondo blanco translúcido más claro
+        mainBorder: "rgb(0, 0, 0, 0.1)", // Borde sutil en color oscuro
+        mainBorderDarker: "rgb(0, 0, 0, 0.15)", // Borde ligeramente más oscuro
+        quoteIconColor: "rgb(104, 115, 133)", // Gris más suave para el icono de cita
       },
       fontFamily: {
         Inter: "Inter",
@@ -28,10 +28,9 @@ module.exports = {
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",      
+        xl: "1280px",
         "2xl": "1536px",
       },
     },
   },
 };
-
